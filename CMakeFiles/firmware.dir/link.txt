@@ -1,0 +1,1 @@
+/usr/bin/arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Wall -Wextra -ffunction-sections -fdata-sections -O0 -g -mcpu=cortex-m3 -mthumb -nostdlib -Wl,--gc-sections -Wl,-Map=firmware.map -T/home/yunis/LAB3-Prog/linker.ld CMakeFiles/firmware.dir/startup.s.obj CMakeFiles/firmware.dir/src/lcd.c.obj CMakeFiles/firmware.dir/src/main.c.obj -o firmware
