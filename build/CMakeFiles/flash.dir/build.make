@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/yunis/LAB3-Prog
+CMAKE_SOURCE_DIR = /home/yunis/LAB3-prog
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/yunis/LAB3-Prog/build
+CMAKE_BINARY_DIR = /home/yunis/LAB3-prog/build
 
 # Utility rule file for flash.
 
@@ -85,6 +85,6 @@ CMakeFiles/flash.dir/clean:
 .PHONY : CMakeFiles/flash.dir/clean
 
 CMakeFiles/flash.dir/depend:
-	cd /home/yunis/LAB3-Prog/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/yunis/LAB3-Prog /home/yunis/LAB3-Prog /home/yunis/LAB3-Prog/build /home/yunis/LAB3-Prog/build /home/yunis/LAB3-Prog/build/CMakeFiles/flash.dir/DependInfo.cmake "--color=$(COLOR)" flash
+	cd /home/yunis/LAB3-prog/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/yunis/LAB3-prog /home/yunis/LAB3-prog /home/yunis/LAB3-prog/build /home/yunis/LAB3-prog/build /home/yunis/LAB3-prog/build/CMakeFiles/flash.dir/DependInfo.cmake "--color=$(COLOR)" flash
 .PHONY : CMakeFiles/flash.dir/depend
 

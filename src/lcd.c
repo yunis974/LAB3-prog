@@ -127,3 +127,24 @@ void LCD_SendString(char *string)
         LCD_WriteChar(*string++);
     }
 }
+
+void LCD_Clear(void)
+{
+    LCD_Command(0, 0, 0x01);
+    LCD_Delay(2);
+}
+
+void LCD_SetCursor(uint8_t row, uint8_t col)
+{
+    uint8_t rows[4] = {0x00, 0x40, 0x14, 0x54};
+    if (row > 3) return;
+    if (col > 19) return;
+
+    uint8_t address = rows[row] + col;
+
+    uint8_t com = (1u << 7) | (address & 0x1F);
+    LCD_Command(0, 0 , com);
+    
+    LCD_Delay(2);
+    
+}

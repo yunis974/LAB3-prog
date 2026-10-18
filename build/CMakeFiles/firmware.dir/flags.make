@@ -5,13 +5,13 @@
 # compile C with /usr/bin/arm-none-eabi-gcc
 ASM_DEFINES = 
 
-ASM_INCLUDES = -I/home/yunis/LAB3-Prog/include
+ASM_INCLUDES = -I/home/yunis/LAB3-prog/include
 
 ASM_FLAGS = -mcpu=cortex-m3 -mthumb
 
 C_DEFINES = 
 
-C_INCLUDES = -I/home/yunis/LAB3-Prog/include
+C_INCLUDES = -I/home/yunis/LAB3-prog/include
 
 C_FLAGS = -mcpu=cortex-m3 -mthumb -Wall -Wextra -ffunction-sections -fdata-sections -O0 -g
 

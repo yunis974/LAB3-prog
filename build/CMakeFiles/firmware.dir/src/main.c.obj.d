@@ -1,5 +1,5 @@
-CMakeFiles/firmware.dir/src/main.c.obj: /home/yunis/LAB3-Prog/src/main.c \
- /home/yunis/LAB3-Prog/include/lcd.h \
+CMakeFiles/firmware.dir/src/main.c.obj: /home/yunis/LAB3-prog/src/main.c \
+ /home/yunis/LAB3-prog/include/lcd.h \
  /usr/lib/gcc/arm-none-eabi/16.2.0/include/stdbool.h \
  /usr/lib/gcc/arm-none-eabi/16.2.0/include/stdint.h \
  /usr/arm-none-eabi/include/stdint.h \

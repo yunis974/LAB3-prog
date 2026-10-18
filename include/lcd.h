@@ -15,5 +15,7 @@ void LCD_Delay(uint16_t time);
 void WriteToPin(uint8_t pin, bool value);
 void LCD_Send4bits(uint8_t data);
 void LCD_SendString(char *string);
+void LCD_Clear(void);
+void LCD_SetCursor(uint8_t row, uint8_t col);
 
 #endif

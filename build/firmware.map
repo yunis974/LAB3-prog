@@ -13,6 +13,8 @@ Discarded input sections
  .text          0x00000000        0x0 CMakeFiles/firmware.dir/src/main.c.obj
  .data          0x00000000        0x0 CMakeFiles/firmware.dir/src/main.c.obj
  .bss           0x00000000        0x0 CMakeFiles/firmware.dir/src/main.c.obj
+ .text.InitTimer2
+                0x00000000       0x1c CMakeFiles/firmware.dir/src/main.c.obj
 
 Memory Configuration
 
@@ -34,7 +36,7 @@ LOAD CMakeFiles/firmware.dir/src/main.c.obj
  .isr_vector    0x08000000       0x40 CMakeFiles/firmware.dir/startup.s.obj
                 0x08000040                        . = ALIGN (0x4)
 
-.text           0x08000040      0x334
+.text           0x08000040      0x3b0
                 0x08000040                        . = ALIGN (0x4)
  *(.text)
  *(.text*)
@@ -80,35 +82,41 @@ LOAD CMakeFiles/firmware.dir/src/main.c.obj
  .text.LCD_SendString
                 0x08000318       0x2a CMakeFiles/firmware.dir/src/lcd.c.obj
                 0x08000318                LCD_SendString
- *fill*         0x08000342        0x2 
- .text.main     0x08000344       0x20 CMakeFiles/firmware.dir/src/main.c.obj
-                0x08000344                main
+ .text.LCD_Clear
+                0x08000342       0x18 CMakeFiles/firmware.dir/src/lcd.c.obj
+                0x08000342                LCD_Clear
+ *fill*         0x0800035a        0x2 
+ .text.LCD_SetCursor
+                0x0800035c       0x64 CMakeFiles/firmware.dir/src/lcd.c.obj
+                0x0800035c                LCD_SetCursor
+ .text.main     0x080003c0       0x2c CMakeFiles/firmware.dir/src/main.c.obj
+                0x080003c0                main
  *(.rodata)
- .rodata        0x08000364        0xe CMakeFiles/firmware.dir/src/main.c.obj
+ .rodata        0x080003ec        0x3 CMakeFiles/firmware.dir/src/main.c.obj
  *(.rodata*)
-                0x08000374                        . = ALIGN (0x4)
- *fill*         0x08000372        0x2 
-                0x08000374                        _sidata = LOADADDR (.data)
+                0x080003f0                        . = ALIGN (0x4)
+ *fill*         0x080003ef        0x1 
+                0x080003f0                        _sidata = LOADADDR (.data)
 
-.glue_7         0x08000374        0x0
- .glue_7        0x08000374        0x0 linker stubs
+.glue_7         0x080003f0        0x0
+ .glue_7        0x080003f0        0x0 linker stubs
 
-.glue_7t        0x08000374        0x0
- .glue_7t       0x08000374        0x0 linker stubs
+.glue_7t        0x080003f0        0x0
+ .glue_7t       0x080003f0        0x0 linker stubs
 
-.vfp11_veneer   0x08000374        0x0
- .vfp11_veneer  0x08000374        0x0 linker stubs
+.vfp11_veneer   0x080003f0        0x0
+ .vfp11_veneer  0x080003f0        0x0 linker stubs
 
-.v4_bx          0x08000374        0x0
- .v4_bx         0x08000374        0x0 linker stubs
+.v4_bx          0x080003f0        0x0
+ .v4_bx         0x080003f0        0x0 linker stubs
 
-.iplt           0x08000374        0x0
- .iplt          0x08000374        0x0 CMakeFiles/firmware.dir/startup.s.obj
+.iplt           0x080003f0        0x0
+ .iplt          0x080003f0        0x0 CMakeFiles/firmware.dir/startup.s.obj
 
-.rel.dyn        0x08000374        0x0
- .rel.iplt      0x08000374        0x0 CMakeFiles/firmware.dir/startup.s.obj
+.rel.dyn        0x080003f0        0x0
+ .rel.iplt      0x080003f0        0x0 CMakeFiles/firmware.dir/startup.s.obj
 
-.data           0x20000000        0x0 load address 0x08000374
+.data           0x20000000        0x0 load address 0x080003f0
                 0x20000000                        . = ALIGN (0x4)
                 0x20000000                        _sdata = .
  *(.data)
@@ -116,10 +124,10 @@ LOAD CMakeFiles/firmware.dir/src/main.c.obj
                 0x20000000                        . = ALIGN (0x4)
                 0x20000000                        _edata = .
 
-.igot.plt       0x20000000        0x0 load address 0x08000374
+.igot.plt       0x20000000        0x0 load address 0x080003f0
  .igot.plt      0x20000000        0x0 CMakeFiles/firmware.dir/startup.s.obj
 
-.bss            0x20000000        0x0 load address 0x08000374
+.bss            0x20000000        0x0 load address 0x080003f0
                 0x20000000                        . = ALIGN (0x4)
                 0x20000000                        _sbss = .
  *(.bss)
@@ -129,7 +137,7 @@ LOAD CMakeFiles/firmware.dir/src/main.c.obj
                 0x20000000                        _ebss = .
 
 ._user_heap_stack
-                0x20000000      0x400 load address 0x08000374
+                0x20000000      0x400 load address 0x080003f0
                 0x20000000                        . = ALIGN (0x8)
                 0x20000000                        end = .
                 0x20000400                        . = (. + 0x400)
@@ -153,37 +161,37 @@ LOAD linker stubs
  .comment       0x0000001e        0x0 CMakeFiles/firmware.dir/src/main.c.obj
                                  0x1f (size before relaxing)
 
-.debug_info     0x00000000      0x387
- .debug_info    0x00000000      0x2ca CMakeFiles/firmware.dir/src/lcd.c.obj
- .debug_info    0x000002ca       0xbd CMakeFiles/firmware.dir/src/main.c.obj
+.debug_info     0x00000000      0x45a
+ .debug_info    0x00000000      0x342 CMakeFiles/firmware.dir/src/lcd.c.obj
+ .debug_info    0x00000342      0x118 CMakeFiles/firmware.dir/src/main.c.obj
 
-.debug_abbrev   0x00000000      0x191
- .debug_abbrev  0x00000000      0x10c CMakeFiles/firmware.dir/src/lcd.c.obj
- .debug_abbrev  0x0000010c       0x85 CMakeFiles/firmware.dir/src/main.c.obj
+.debug_abbrev   0x00000000      0x1d0
+ .debug_abbrev  0x00000000      0x121 CMakeFiles/firmware.dir/src/lcd.c.obj
+ .debug_abbrev  0x00000121       0xaf CMakeFiles/firmware.dir/src/main.c.obj
 
-.debug_aranges  0x00000000       0x80
+.debug_aranges  0x00000000       0x98
  .debug_aranges
-                0x00000000       0x60 CMakeFiles/firmware.dir/src/lcd.c.obj
+                0x00000000       0x70 CMakeFiles/firmware.dir/src/lcd.c.obj
  .debug_aranges
-                0x00000060       0x20 CMakeFiles/firmware.dir/src/main.c.obj
+                0x00000070       0x28 CMakeFiles/firmware.dir/src/main.c.obj
 
 .debug_rnglists
-                0x00000000       0x56
+                0x00000000       0x68
  .debug_rnglists
-                0x00000000       0x43 CMakeFiles/firmware.dir/src/lcd.c.obj
+                0x00000000       0x4f CMakeFiles/firmware.dir/src/lcd.c.obj
  .debug_rnglists
-                0x00000043       0x13 CMakeFiles/firmware.dir/src/main.c.obj
+                0x0000004f       0x19 CMakeFiles/firmware.dir/src/main.c.obj
 
-.debug_line     0x00000000      0x2b6
- .debug_line    0x00000000      0x234 CMakeFiles/firmware.dir/src/lcd.c.obj
- .debug_line    0x00000234       0x82 CMakeFiles/firmware.dir/src/main.c.obj
+.debug_line     0x00000000      0x38c
+ .debug_line    0x00000000      0x28b CMakeFiles/firmware.dir/src/lcd.c.obj
+ .debug_line    0x0000028b      0x101 CMakeFiles/firmware.dir/src/main.c.obj
 
-.debug_str      0x00000000      0x204
- .debug_str     0x00000000      0x204 CMakeFiles/firmware.dir/src/lcd.c.obj
-                                0x231 (size before relaxing)
- .debug_str     0x00000204        0x0 CMakeFiles/firmware.dir/src/main.c.obj
-                                0x163 (size before relaxing)
+.debug_str      0x00000000      0x234
+ .debug_str     0x00000000      0x234 CMakeFiles/firmware.dir/src/lcd.c.obj
+                                0x256 (size before relaxing)
+ .debug_str     0x00000234        0x0 CMakeFiles/firmware.dir/src/main.c.obj
+                                0x1ac (size before relaxing)
 
-.debug_frame    0x00000000      0x188
- .debug_frame   0x00000000      0x15c CMakeFiles/firmware.dir/src/lcd.c.obj
- .debug_frame   0x0000015c       0x2c CMakeFiles/firmware.dir/src/main.c.obj
+.debug_frame    0x00000000      0x1e8
+ .debug_frame   0x00000000      0x19c CMakeFiles/firmware.dir/src/lcd.c.obj
+ .debug_frame   0x0000019c       0x4c CMakeFiles/firmware.dir/src/main.c.obj

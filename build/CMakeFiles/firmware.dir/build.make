@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/yunis/LAB3-Prog
+CMAKE_SOURCE_DIR = /home/yunis/LAB3-prog
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/yunis/LAB3-Prog/build
+CMAKE_BINARY_DIR = /home/yunis/LAB3-prog/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/firmware.dir/depend.make
@@ -73,45 +73,45 @@ CMakeFiles/firmware.dir/codegen:
 .PHONY : CMakeFiles/firmware.dir/codegen
 
 CMakeFiles/firmware.dir/startup.s.obj: CMakeFiles/firmware.dir/flags.make
-CMakeFiles/firmware.dir/startup.s.obj: /home/yunis/LAB3-Prog/startup.s
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/yunis/LAB3-Prog/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building ASM object CMakeFiles/firmware.dir/startup.s.obj"
-	/usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/firmware.dir/startup.s.obj -c /home/yunis/LAB3-Prog/startup.s
+CMakeFiles/firmware.dir/startup.s.obj: /home/yunis/LAB3-prog/startup.s
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/yunis/LAB3-prog/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building ASM object CMakeFiles/firmware.dir/startup.s.obj"
+	/usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/firmware.dir/startup.s.obj -c /home/yunis/LAB3-prog/startup.s
 
 CMakeFiles/firmware.dir/startup.s.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing ASM source to CMakeFiles/firmware.dir/startup.s.i"
-	/usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -E /home/yunis/LAB3-Prog/startup.s > CMakeFiles/firmware.dir/startup.s.i
+	/usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -E /home/yunis/LAB3-prog/startup.s > CMakeFiles/firmware.dir/startup.s.i
 
 CMakeFiles/firmware.dir/startup.s.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling ASM source to assembly CMakeFiles/firmware.dir/startup.s.s"
-	/usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -S /home/yunis/LAB3-Prog/startup.s -o CMakeFiles/firmware.dir/startup.s.s
+	/usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -S /home/yunis/LAB3-prog/startup.s -o CMakeFiles/firmware.dir/startup.s.s
 
 CMakeFiles/firmware.dir/src/lcd.c.obj: CMakeFiles/firmware.dir/flags.make
-CMakeFiles/firmware.dir/src/lcd.c.obj: /home/yunis/LAB3-Prog/src/lcd.c
+CMakeFiles/firmware.dir/src/lcd.c.obj: /home/yunis/LAB3-prog/src/lcd.c
 CMakeFiles/firmware.dir/src/lcd.c.obj: CMakeFiles/firmware.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/yunis/LAB3-Prog/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/firmware.dir/src/lcd.c.obj"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/firmware.dir/src/lcd.c.obj -MF CMakeFiles/firmware.dir/src/lcd.c.obj.d -o CMakeFiles/firmware.dir/src/lcd.c.obj -c /home/yunis/LAB3-Prog/src/lcd.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/yunis/LAB3-prog/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/firmware.dir/src/lcd.c.obj"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/firmware.dir/src/lcd.c.obj -MF CMakeFiles/firmware.dir/src/lcd.c.obj.d -o CMakeFiles/firmware.dir/src/lcd.c.obj -c /home/yunis/LAB3-prog/src/lcd.c
 
 CMakeFiles/firmware.dir/src/lcd.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/firmware.dir/src/lcd.c.i"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/yunis/LAB3-Prog/src/lcd.c > CMakeFiles/firmware.dir/src/lcd.c.i
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/yunis/LAB3-prog/src/lcd.c > CMakeFiles/firmware.dir/src/lcd.c.i
 
 CMakeFiles/firmware.dir/src/lcd.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/firmware.dir/src/lcd.c.s"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/yunis/LAB3-Prog/src/lcd.c -o CMakeFiles/firmware.dir/src/lcd.c.s
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/yunis/LAB3-prog/src/lcd.c -o CMakeFiles/firmware.dir/src/lcd.c.s
 
 CMakeFiles/firmware.dir/src/main.c.obj: CMakeFiles/firmware.dir/flags.make
-CMakeFiles/firmware.dir/src/main.c.obj: /home/yunis/LAB3-Prog/src/main.c
+CMakeFiles/firmware.dir/src/main.c.obj: /home/yunis/LAB3-prog/src/main.c
 CMakeFiles/firmware.dir/src/main.c.obj: CMakeFiles/firmware.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/yunis/LAB3-Prog/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/firmware.dir/src/main.c.obj"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/firmware.dir/src/main.c.obj -MF CMakeFiles/firmware.dir/src/main.c.obj.d -o CMakeFiles/firmware.dir/src/main.c.obj -c /home/yunis/LAB3-Prog/src/main.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/yunis/LAB3-prog/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/firmware.dir/src/main.c.obj"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/firmware.dir/src/main.c.obj -MF CMakeFiles/firmware.dir/src/main.c.obj.d -o CMakeFiles/firmware.dir/src/main.c.obj -c /home/yunis/LAB3-prog/src/main.c
 
 CMakeFiles/firmware.dir/src/main.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/firmware.dir/src/main.c.i"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/yunis/LAB3-Prog/src/main.c > CMakeFiles/firmware.dir/src/main.c.i
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/yunis/LAB3-prog/src/main.c > CMakeFiles/firmware.dir/src/main.c.i
 
 CMakeFiles/firmware.dir/src/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/firmware.dir/src/main.c.s"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/yunis/LAB3-Prog/src/main.c -o CMakeFiles/firmware.dir/src/main.c.s
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/yunis/LAB3-prog/src/main.c -o CMakeFiles/firmware.dir/src/main.c.s
 
 # Object files for target firmware
 firmware_OBJECTS = \
@@ -127,7 +127,7 @@ firmware: CMakeFiles/firmware.dir/src/lcd.c.obj
 firmware: CMakeFiles/firmware.dir/src/main.c.obj
 firmware: CMakeFiles/firmware.dir/build.make
 firmware: CMakeFiles/firmware.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/yunis/LAB3-Prog/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C executable firmware"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/yunis/LAB3-prog/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C executable firmware"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/firmware.dir/link.txt --verbose=$(VERBOSE)
 	arm-none-eabi-objcopy -O binary firmware firmware.bin
 	arm-none-eabi-size firmware
@@ -141,6 +141,6 @@ CMakeFiles/firmware.dir/clean:
 .PHONY : CMakeFiles/firmware.dir/clean
 
 CMakeFiles/firmware.dir/depend:
-	cd /home/yunis/LAB3-Prog/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/yunis/LAB3-Prog /home/yunis/LAB3-Prog /home/yunis/LAB3-Prog/build /home/yunis/LAB3-Prog/build /home/yunis/LAB3-Prog/build/CMakeFiles/firmware.dir/DependInfo.cmake "--color=$(COLOR)" firmware
+	cd /home/yunis/LAB3-prog/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/yunis/LAB3-prog /home/yunis/LAB3-prog /home/yunis/LAB3-prog/build /home/yunis/LAB3-prog/build /home/yunis/LAB3-prog/build/CMakeFiles/firmware.dir/DependInfo.cmake "--color=$(COLOR)" firmware
 .PHONY : CMakeFiles/firmware.dir/depend
 
