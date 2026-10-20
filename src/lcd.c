@@ -17,6 +17,12 @@
 #define SYSTICK 0xE000E010
 #define SYSTICK_CTRL ((volatile uint32_t*)(SYSTICK + 0x00))
 
+
+
+
+
+
+
 void LCD_GPIO_Init(void)
 {
     RCC_APB2ENR |= (1U << 3);
@@ -46,7 +52,7 @@ void LCD_Delay(uint16_t time)
     uint32_t freq = 8000;
     freq *= time;
     volatile uint32_t* stkLoad = (volatile uint32_t*)((volatile uint8_t*)SYSTICK_CTRL + 0x04);
-    //*(volatile uint32_t*)((volatile uint8_t*)SYSTICK_CTRL + 0x08) = 0;
+    *(volatile uint32_t*)((volatile uint8_t*)SYSTICK_CTRL + 0x08) = 0;
     uint32_t mask2 = 0xFFFFFF;
     freq &= mask2;
     *stkLoad = freq;
@@ -54,7 +60,6 @@ void LCD_Delay(uint16_t time)
     while((*SYSTICK_CTRL & mask) == 0){
 
     }
-    *SYSTICK_CTRL &= ~mask;
     return;
 }
 
@@ -79,6 +84,7 @@ void LCD_Send4Bits(uint8_t data)
     WriteToPin(EN_Pin, 1);
     LCD_Delay(1);
     WriteToPin(EN_Pin, 0);
+
 }
 
 
@@ -89,6 +95,25 @@ void LCD_Command(bool RW, bool RS, uint8_t data)
 
     LCD_Send4Bits(data >> 4);
     LCD_Send4Bits(data & 0x0F);
+
+
+
+    //version sans Send4bits
+  /* for (int j = 1; j >= 0; j--)
+    {
+        uint8_t a = (data >> (4 * j) ) & 0x0F;
+
+        for(int i = 0; i < 4; i++)
+        {
+            WriteToPin(D4_Pin + i, (a >> i) & 0x01);
+        }
+
+        WriteToPin(EN_Pin, 1);
+        LCD_Delay(1);
+        WriteToPin(EN_Pin, 0);
+        LCD_Delay(1);
+    }*/
+
 
 }
 
@@ -102,11 +127,10 @@ void LCD_Init(void)
     LCD_Command(0, 0, 0x33);
     LCD_Command(0, 0, 0x32);
 
-    LCD_Command(0, 0, 0x28);
-    LCD_Command(0, 0, 0x08);
-    LCD_Command(0,0, 0x0C);
-    LCD_Command(0, 0, 0x06);
-    LCD_Command(0,0, 0x01);
+    LCD_Command(0,0,0x28);
+    LCD_Command(0,0,0x0C);
+    LCD_Command(0,0,0x06);
+    LCD_Command(0,0,0x01);
 
     LCD_Delay(2);
 }
@@ -138,13 +162,14 @@ void LCD_SetCursor(uint8_t row, uint8_t col)
 {
     uint8_t rows[4] = {0x00, 0x40, 0x14, 0x54};
     if (row > 3) return;
-    if (col > 19) return;
+    //if (col > 19) return;
 
     uint8_t address = rows[row] + col;
 
-    uint8_t com = (1u << 7) | (address & 0x1F);
+    uint8_t com = (1u << 7) | (address & 0x7F);
     LCD_Command(0, 0 , com);
     
     LCD_Delay(2);
     
 }
+

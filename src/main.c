@@ -1,22 +1,53 @@
 #include "lcd.h"
+#include "timer.h"
+#include <stdio.h>
 
-#define RCC 0x40021000
-#define RCC_APB1ENR (*(volatile uint32_t*)(RCC + 0x1C))
+#define TIM2_CNT (*(volatile uint32_t *)0x40000024)
 
-void InitTimer2()
+uint8_t sec = 50;
+uint8_t min = 59;
+uint8_t hour = 23;
+
+void updateNumber()
 {
-    RCC_APB1ENR |= 0x1; // Enable clock for Timer 2
+    static char buf[16];
+    sec++;
+    if (sec == 60)
+    {
+        sec = 0;
+        min++;
+
+        if (min == 60)
+        {
+            min = 0;
+            hour++;
+
+            if(hour == 24)
+            {
+                hour = 0;
+            }
+        }
+    }
+    LCD_SetCursor(0,6);
+    sprintf(buf,"%02d:%02d:%02d", hour, min, sec);
+    LCD_SendString(buf);
 }
+
 
 int main(void)
-{
+{   
+    void (*f)(void) = updateNumber;
+    timerInit();
+    setTimerCallback(*f);
     LCD_Init();
     LCD_Clear();
-    LCD_SetCursor(2, 1);
-    LCD_SendString("yo");
-    LCD_WriteChar(0xA5);
-
+    LCD_SetCursor(0, 6);
+    LCD_SendString("17:48:00");
     
+
+
     return 0;
 }
+
+
 

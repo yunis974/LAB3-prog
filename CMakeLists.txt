@@ -28,7 +28,7 @@ set(LINKER_SCRIPT ${CMAKE_SOURCE_DIR}/linker.ld)
 
 # Pas de -T ici — il est ajouté une seule fois via target_link_options plus bas
 set(CMAKE_EXE_LINKER_FLAGS
-    "${CPU_FLAGS} -nostdlib -Wl,--gc-sections -Wl,-Map=firmware.map"
+    "${CPU_FLAGS} --specs=nano.specs --specs=nosys.specs -nostartfiles -Wl,--gc-sections -Wl,-Map=firmware.map"
 )
 
 # --- Sources ---

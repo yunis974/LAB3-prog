@@ -1,4 +1,4 @@
-/home/yunis/LAB3-prog/build/CMakeFiles/firmware.dir
-/home/yunis/LAB3-prog/build/CMakeFiles/flash.dir
-/home/yunis/LAB3-prog/build/CMakeFiles/edit_cache.dir
-/home/yunis/LAB3-prog/build/CMakeFiles/rebuild_cache.dir
+/home/yunis/LAB3-Prog/build/CMakeFiles/firmware.dir
+/home/yunis/LAB3-Prog/build/CMakeFiles/flash.dir
+/home/yunis/LAB3-Prog/build/CMakeFiles/edit_cache.dir
+/home/yunis/LAB3-Prog/build/CMakeFiles/rebuild_cache.dir

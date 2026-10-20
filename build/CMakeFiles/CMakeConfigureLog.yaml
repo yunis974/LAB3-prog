@@ -20,40 +20,37 @@ events:
     names:
       - "uname"
     candidate_directories:
-      - "/home/yunis/.platformio/penv/bin/"
+      - "/home/yunis/.npm-global/bin/"
+      - "/home/yunis/.local/bin/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
       - "/usr/bin/"
-      - "/opt/android-sdk/cmdline-tools/latest/bin/"
-      - "/opt/android-sdk/platform-tools/"
-      - "/opt/android-sdk/tools/"
-      - "/opt/android-sdk/tools/bin/"
-      - "/var/lib/flatpak/exports/bin/"
       - "/usr/lib/jvm/default/bin/"
       - "/usr/bin/site_perl/"
       - "/usr/bin/vendor_perl/"
       - "/usr/bin/core_perl/"
+      - "/usr/lib/rustup/bin/"
       - "/bin/"
     searched_directories:
-      - "/home/yunis/.platformio/penv/bin/uname"
+      - "/home/yunis/.npm-global/bin/uname"
+      - "/home/yunis/.local/bin/uname"
       - "/usr/local/sbin/uname"
       - "/usr/local/bin/uname"
     found: "/usr/bin/uname"
     search_context:
       ENV{PATH}:
-        - "/home/yunis/.platformio/penv/bin"
+        - "/home/yunis/.npm-global/bin"
+        - "/home/yunis/.local/bin"
+        - "/home/yunis/.npm-global/bin"
+        - "/home/yunis/.local/bin"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/bin"
-        - "/opt/android-sdk/cmdline-tools/latest/bin"
-        - "/opt/android-sdk/platform-tools"
-        - "/opt/android-sdk/tools"
-        - "/opt/android-sdk/tools/bin"
-        - "/var/lib/flatpak/exports/bin"
         - "/usr/lib/jvm/default/bin"
         - "/usr/bin/site_perl"
         - "/usr/bin/vendor_perl"
         - "/usr/bin/core_perl"
+        - "/usr/lib/rustup/bin"
   -
     kind: "message-v1"
     backtrace:
@@ -61,15 +58,15 @@ events:
       - "CMakeLists.txt:20 (project)"
     message: |
       The target system is: Generic -  - arm
-      The host system is: Linux - 7.2.7-arch1-1 - x86_64
+      The host system is: Linux - 7.2.11-arch1-1 - x86_64
   -
     kind: "find-v1"
     backtrace:
-      - "/usr/share/cmake/Modules/CMakeUnixFindMake.cmake:5 (find_program)"
+      - "/usr/share/cmake/Modules/CMakeNinjaFindMake.cmake:5 (find_program)"
       - "CMakeLists.txt:20 (project)"
     mode: "program"
     variable: "CMAKE_MAKE_PROGRAM"
-    description: "Path to a program."
+    description: "Program used to build from build.ninja files."
     settings:
       SearchFramework: "NEVER"
       SearchAppBundle: "NEVER"
@@ -79,56 +76,49 @@ events:
       CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
       CMAKE_FIND_USE_INSTALL_PREFIX: true
     names:
-      - "gmake"
-      - "make"
-      - "smake"
+      - "ninja-build"
+      - "ninja"
+      - "samu"
     candidate_directories:
-      - "/home/yunis/.platformio/penv/bin/"
+      - "/home/yunis/.npm-global/bin/"
+      - "/home/yunis/.local/bin/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
       - "/usr/bin/"
-      - "/opt/android-sdk/cmdline-tools/latest/bin/"
-      - "/opt/android-sdk/platform-tools/"
-      - "/opt/android-sdk/tools/"
-      - "/opt/android-sdk/tools/bin/"
-      - "/var/lib/flatpak/exports/bin/"
       - "/usr/lib/jvm/default/bin/"
       - "/usr/bin/site_perl/"
       - "/usr/bin/vendor_perl/"
       - "/usr/bin/core_perl/"
+      - "/usr/lib/rustup/bin/"
     searched_directories:
-      - "/home/yunis/.platformio/penv/bin/gmake"
-      - "/usr/local/sbin/gmake"
-      - "/usr/local/bin/gmake"
-      - "/usr/bin/gmake"
-      - "/opt/android-sdk/cmdline-tools/latest/bin/gmake"
-      - "/opt/android-sdk/platform-tools/gmake"
-      - "/opt/android-sdk/tools/gmake"
-      - "/opt/android-sdk/tools/bin/gmake"
-      - "/var/lib/flatpak/exports/bin/gmake"
-      - "/usr/lib/jvm/default/bin/gmake"
-      - "/usr/bin/site_perl/gmake"
-      - "/usr/bin/vendor_perl/gmake"
-      - "/usr/bin/core_perl/gmake"
-      - "/home/yunis/.platformio/penv/bin/make"
-      - "/usr/local/sbin/make"
-      - "/usr/local/bin/make"
-    found: "/usr/bin/make"
+      - "/home/yunis/.npm-global/bin/ninja-build"
+      - "/home/yunis/.npm-global/bin/ninja"
+      - "/home/yunis/.npm-global/bin/samu"
+      - "/home/yunis/.local/bin/ninja-build"
+      - "/home/yunis/.local/bin/ninja"
+      - "/home/yunis/.local/bin/samu"
+      - "/usr/local/sbin/ninja-build"
+      - "/usr/local/sbin/ninja"
+      - "/usr/local/sbin/samu"
+      - "/usr/local/bin/ninja-build"
+      - "/usr/local/bin/ninja"
+      - "/usr/local/bin/samu"
+      - "/usr/bin/ninja-build"
+    found: "/usr/bin/ninja"
     search_context:
       ENV{PATH}:
-        - "/home/yunis/.platformio/penv/bin"
+        - "/home/yunis/.npm-global/bin"
+        - "/home/yunis/.local/bin"
+        - "/home/yunis/.npm-global/bin"
+        - "/home/yunis/.local/bin"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/bin"
-        - "/opt/android-sdk/cmdline-tools/latest/bin"
-        - "/opt/android-sdk/platform-tools"
-        - "/opt/android-sdk/tools"
-        - "/opt/android-sdk/tools/bin"
-        - "/var/lib/flatpak/exports/bin"
         - "/usr/lib/jvm/default/bin"
         - "/usr/bin/site_perl"
         - "/usr/bin/vendor_perl"
         - "/usr/bin/core_perl"
+        - "/usr/lib/rustup/bin"
   -
     kind: "find-v1"
     backtrace:
@@ -149,39 +139,36 @@ events:
     names:
       - "arm-none-eabi-gcc"
     candidate_directories:
-      - "/home/yunis/.platformio/penv/bin/"
+      - "/home/yunis/.npm-global/bin/"
+      - "/home/yunis/.local/bin/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
       - "/usr/bin/"
-      - "/opt/android-sdk/cmdline-tools/latest/bin/"
-      - "/opt/android-sdk/platform-tools/"
-      - "/opt/android-sdk/tools/"
-      - "/opt/android-sdk/tools/bin/"
-      - "/var/lib/flatpak/exports/bin/"
       - "/usr/lib/jvm/default/bin/"
       - "/usr/bin/site_perl/"
       - "/usr/bin/vendor_perl/"
       - "/usr/bin/core_perl/"
+      - "/usr/lib/rustup/bin/"
     searched_directories:
-      - "/home/yunis/.platformio/penv/bin/arm-none-eabi-gcc"
+      - "/home/yunis/.npm-global/bin/arm-none-eabi-gcc"
+      - "/home/yunis/.local/bin/arm-none-eabi-gcc"
       - "/usr/local/sbin/arm-none-eabi-gcc"
       - "/usr/local/bin/arm-none-eabi-gcc"
     found: "/usr/bin/arm-none-eabi-gcc"
     search_context:
       ENV{PATH}:
-        - "/home/yunis/.platformio/penv/bin"
+        - "/home/yunis/.npm-global/bin"
+        - "/home/yunis/.local/bin"
+        - "/home/yunis/.npm-global/bin"
+        - "/home/yunis/.local/bin"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/bin"
-        - "/opt/android-sdk/cmdline-tools/latest/bin"
-        - "/opt/android-sdk/platform-tools"
-        - "/opt/android-sdk/tools"
-        - "/opt/android-sdk/tools/bin"
-        - "/var/lib/flatpak/exports/bin"
         - "/usr/lib/jvm/default/bin"
         - "/usr/bin/site_perl"
         - "/usr/bin/vendor_perl"
         - "/usr/bin/core_perl"
+        - "/usr/lib/rustup/bin"
   -
     kind: "find-v1"
     backtrace:
@@ -209,19 +196,18 @@ events:
     found: "/usr/share/cmake/Modules/CMakeCCompilerId.c.in"
     search_context:
       ENV{PATH}:
-        - "/home/yunis/.platformio/penv/bin"
+        - "/home/yunis/.npm-global/bin"
+        - "/home/yunis/.local/bin"
+        - "/home/yunis/.npm-global/bin"
+        - "/home/yunis/.local/bin"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/bin"
-        - "/opt/android-sdk/cmdline-tools/latest/bin"
-        - "/opt/android-sdk/platform-tools"
-        - "/opt/android-sdk/tools"
-        - "/opt/android-sdk/tools/bin"
-        - "/var/lib/flatpak/exports/bin"
         - "/usr/lib/jvm/default/bin"
         - "/usr/bin/site_perl"
         - "/usr/bin/vendor_perl"
         - "/usr/bin/core_perl"
+        - "/usr/lib/rustup/bin"
   -
     kind: "message-v1"
     backtrace:
@@ -279,19 +265,18 @@ events:
     found: "/usr/share/cmake/Modules/CMakeCCompilerId.c.in"
     search_context:
       ENV{PATH}:
-        - "/home/yunis/.platformio/penv/bin"
+        - "/home/yunis/.npm-global/bin"
+        - "/home/yunis/.local/bin"
+        - "/home/yunis/.npm-global/bin"
+        - "/home/yunis/.local/bin"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/bin"
-        - "/opt/android-sdk/cmdline-tools/latest/bin"
-        - "/opt/android-sdk/platform-tools"
-        - "/opt/android-sdk/tools"
-        - "/opt/android-sdk/tools/bin"
-        - "/var/lib/flatpak/exports/bin"
         - "/usr/lib/jvm/default/bin"
         - "/usr/bin/site_perl"
         - "/usr/bin/vendor_perl"
         - "/usr/bin/core_perl"
+        - "/usr/lib/rustup/bin"
   -
     kind: "message-v1"
     backtrace:
@@ -312,7 +297,7 @@ events:
       Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.o"
       
       The C compiler identification is GNU, found in:
-        /home/yunis/LAB3-prog/build/CMakeFiles/4.4.3/CompilerIdC/CMakeCCompilerId.o
+        /home/yunis/LAB3-Prog/build/CMakeFiles/4.4.4/CompilerIdC/CMakeCCompilerId.o
       
   -
     kind: "find-v1"
@@ -336,34 +321,30 @@ events:
       - "ar"
     candidate_directories:
       - "/usr/bin/"
-      - "/home/yunis/.platformio/penv/bin/"
+      - "/home/yunis/.npm-global/bin/"
+      - "/home/yunis/.local/bin/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
-      - "/opt/android-sdk/cmdline-tools/latest/bin/"
-      - "/opt/android-sdk/platform-tools/"
-      - "/opt/android-sdk/tools/"
-      - "/opt/android-sdk/tools/bin/"
-      - "/var/lib/flatpak/exports/bin/"
       - "/usr/lib/jvm/default/bin/"
       - "/usr/bin/site_perl/"
       - "/usr/bin/vendor_perl/"
       - "/usr/bin/core_perl/"
+      - "/usr/lib/rustup/bin/"
     found: "/usr/bin/arm-none-eabi-ar"
     search_context:
       ENV{PATH}:
-        - "/home/yunis/.platformio/penv/bin"
+        - "/home/yunis/.npm-global/bin"
+        - "/home/yunis/.local/bin"
+        - "/home/yunis/.npm-global/bin"
+        - "/home/yunis/.local/bin"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/bin"
-        - "/opt/android-sdk/cmdline-tools/latest/bin"
-        - "/opt/android-sdk/platform-tools"
-        - "/opt/android-sdk/tools"
-        - "/opt/android-sdk/tools/bin"
-        - "/var/lib/flatpak/exports/bin"
         - "/usr/lib/jvm/default/bin"
         - "/usr/bin/site_perl"
         - "/usr/bin/vendor_perl"
         - "/usr/bin/core_perl"
+        - "/usr/lib/rustup/bin"
   -
     kind: "find-v1"
     backtrace:
@@ -386,34 +367,30 @@ events:
       - "ranlib"
     candidate_directories:
       - "/usr/bin/"
-      - "/home/yunis/.platformio/penv/bin/"
+      - "/home/yunis/.npm-global/bin/"
+      - "/home/yunis/.local/bin/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
-      - "/opt/android-sdk/cmdline-tools/latest/bin/"
-      - "/opt/android-sdk/platform-tools/"
-      - "/opt/android-sdk/tools/"
-      - "/opt/android-sdk/tools/bin/"
-      - "/var/lib/flatpak/exports/bin/"
       - "/usr/lib/jvm/default/bin/"
       - "/usr/bin/site_perl/"
       - "/usr/bin/vendor_perl/"
       - "/usr/bin/core_perl/"
+      - "/usr/lib/rustup/bin/"
     found: "/usr/bin/arm-none-eabi-ranlib"
     search_context:
       ENV{PATH}:
-        - "/home/yunis/.platformio/penv/bin"
+        - "/home/yunis/.npm-global/bin"
+        - "/home/yunis/.local/bin"
+        - "/home/yunis/.npm-global/bin"
+        - "/home/yunis/.local/bin"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/bin"
-        - "/opt/android-sdk/cmdline-tools/latest/bin"
-        - "/opt/android-sdk/platform-tools"
-        - "/opt/android-sdk/tools"
-        - "/opt/android-sdk/tools/bin"
-        - "/var/lib/flatpak/exports/bin"
         - "/usr/lib/jvm/default/bin"
         - "/usr/bin/site_perl"
         - "/usr/bin/vendor_perl"
         - "/usr/bin/core_perl"
+        - "/usr/lib/rustup/bin"
   -
     kind: "find-v1"
     backtrace:
@@ -436,34 +413,30 @@ events:
       - "strip"
     candidate_directories:
       - "/usr/bin/"
-      - "/home/yunis/.platformio/penv/bin/"
+      - "/home/yunis/.npm-global/bin/"
+      - "/home/yunis/.local/bin/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
-      - "/opt/android-sdk/cmdline-tools/latest/bin/"
-      - "/opt/android-sdk/platform-tools/"
-      - "/opt/android-sdk/tools/"
-      - "/opt/android-sdk/tools/bin/"
-      - "/var/lib/flatpak/exports/bin/"
       - "/usr/lib/jvm/default/bin/"
       - "/usr/bin/site_perl/"
       - "/usr/bin/vendor_perl/"
       - "/usr/bin/core_perl/"
+      - "/usr/lib/rustup/bin/"
     found: "/usr/bin/arm-none-eabi-strip"
     search_context:
       ENV{PATH}:
-        - "/home/yunis/.platformio/penv/bin"
+        - "/home/yunis/.npm-global/bin"
+        - "/home/yunis/.local/bin"
+        - "/home/yunis/.npm-global/bin"
+        - "/home/yunis/.local/bin"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/bin"
-        - "/opt/android-sdk/cmdline-tools/latest/bin"
-        - "/opt/android-sdk/platform-tools"
-        - "/opt/android-sdk/tools"
-        - "/opt/android-sdk/tools/bin"
-        - "/var/lib/flatpak/exports/bin"
         - "/usr/lib/jvm/default/bin"
         - "/usr/bin/site_perl"
         - "/usr/bin/vendor_perl"
         - "/usr/bin/core_perl"
+        - "/usr/lib/rustup/bin"
   -
     kind: "find-v1"
     backtrace:
@@ -486,34 +459,30 @@ events:
       - "ld"
     candidate_directories:
       - "/usr/bin/"
-      - "/home/yunis/.platformio/penv/bin/"
+      - "/home/yunis/.npm-global/bin/"
+      - "/home/yunis/.local/bin/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
-      - "/opt/android-sdk/cmdline-tools/latest/bin/"
-      - "/opt/android-sdk/platform-tools/"
-      - "/opt/android-sdk/tools/"
-      - "/opt/android-sdk/tools/bin/"
-      - "/var/lib/flatpak/exports/bin/"
       - "/usr/lib/jvm/default/bin/"
       - "/usr/bin/site_perl/"
       - "/usr/bin/vendor_perl/"
       - "/usr/bin/core_perl/"
+      - "/usr/lib/rustup/bin/"
     found: "/usr/bin/arm-none-eabi-ld"
     search_context:
       ENV{PATH}:
-        - "/home/yunis/.platformio/penv/bin"
+        - "/home/yunis/.npm-global/bin"
+        - "/home/yunis/.local/bin"
+        - "/home/yunis/.npm-global/bin"
+        - "/home/yunis/.local/bin"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/bin"
-        - "/opt/android-sdk/cmdline-tools/latest/bin"
-        - "/opt/android-sdk/platform-tools"
-        - "/opt/android-sdk/tools"
-        - "/opt/android-sdk/tools/bin"
-        - "/var/lib/flatpak/exports/bin"
         - "/usr/lib/jvm/default/bin"
         - "/usr/bin/site_perl"
         - "/usr/bin/vendor_perl"
         - "/usr/bin/core_perl"
+        - "/usr/lib/rustup/bin"
   -
     kind: "find-v1"
     backtrace:
@@ -536,34 +505,30 @@ events:
       - "nm"
     candidate_directories:
       - "/usr/bin/"
-      - "/home/yunis/.platformio/penv/bin/"
+      - "/home/yunis/.npm-global/bin/"
+      - "/home/yunis/.local/bin/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
-      - "/opt/android-sdk/cmdline-tools/latest/bin/"
-      - "/opt/android-sdk/platform-tools/"
-      - "/opt/android-sdk/tools/"
-      - "/opt/android-sdk/tools/bin/"
-      - "/var/lib/flatpak/exports/bin/"
       - "/usr/lib/jvm/default/bin/"
       - "/usr/bin/site_perl/"
       - "/usr/bin/vendor_perl/"
       - "/usr/bin/core_perl/"
+      - "/usr/lib/rustup/bin/"
     found: "/usr/bin/arm-none-eabi-nm"
     search_context:
       ENV{PATH}:
-        - "/home/yunis/.platformio/penv/bin"
+        - "/home/yunis/.npm-global/bin"
+        - "/home/yunis/.local/bin"
+        - "/home/yunis/.npm-global/bin"
+        - "/home/yunis/.local/bin"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/bin"
-        - "/opt/android-sdk/cmdline-tools/latest/bin"
-        - "/opt/android-sdk/platform-tools"
-        - "/opt/android-sdk/tools"
-        - "/opt/android-sdk/tools/bin"
-        - "/var/lib/flatpak/exports/bin"
         - "/usr/lib/jvm/default/bin"
         - "/usr/bin/site_perl"
         - "/usr/bin/vendor_perl"
         - "/usr/bin/core_perl"
+        - "/usr/lib/rustup/bin"
   -
     kind: "find-v1"
     backtrace:
@@ -586,34 +551,30 @@ events:
       - "objdump"
     candidate_directories:
       - "/usr/bin/"
-      - "/home/yunis/.platformio/penv/bin/"
+      - "/home/yunis/.npm-global/bin/"
+      - "/home/yunis/.local/bin/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
-      - "/opt/android-sdk/cmdline-tools/latest/bin/"
-      - "/opt/android-sdk/platform-tools/"
-      - "/opt/android-sdk/tools/"
-      - "/opt/android-sdk/tools/bin/"
-      - "/var/lib/flatpak/exports/bin/"
       - "/usr/lib/jvm/default/bin/"
       - "/usr/bin/site_perl/"
       - "/usr/bin/vendor_perl/"
       - "/usr/bin/core_perl/"
+      - "/usr/lib/rustup/bin/"
     found: "/usr/bin/arm-none-eabi-objdump"
     search_context:
       ENV{PATH}:
-        - "/home/yunis/.platformio/penv/bin"
+        - "/home/yunis/.npm-global/bin"
+        - "/home/yunis/.local/bin"
+        - "/home/yunis/.npm-global/bin"
+        - "/home/yunis/.local/bin"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/bin"
-        - "/opt/android-sdk/cmdline-tools/latest/bin"
-        - "/opt/android-sdk/platform-tools"
-        - "/opt/android-sdk/tools"
-        - "/opt/android-sdk/tools/bin"
-        - "/var/lib/flatpak/exports/bin"
         - "/usr/lib/jvm/default/bin"
         - "/usr/bin/site_perl"
         - "/usr/bin/vendor_perl"
         - "/usr/bin/core_perl"
+        - "/usr/lib/rustup/bin"
   -
     kind: "find-v1"
     backtrace:
@@ -636,34 +597,30 @@ events:
       - "readelf"
     candidate_directories:
       - "/usr/bin/"
-      - "/home/yunis/.platformio/penv/bin/"
+      - "/home/yunis/.npm-global/bin/"
+      - "/home/yunis/.local/bin/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
-      - "/opt/android-sdk/cmdline-tools/latest/bin/"
-      - "/opt/android-sdk/platform-tools/"
-      - "/opt/android-sdk/tools/"
-      - "/opt/android-sdk/tools/bin/"
-      - "/var/lib/flatpak/exports/bin/"
       - "/usr/lib/jvm/default/bin/"
       - "/usr/bin/site_perl/"
       - "/usr/bin/vendor_perl/"
       - "/usr/bin/core_perl/"
+      - "/usr/lib/rustup/bin/"
     found: "/usr/bin/arm-none-eabi-readelf"
     search_context:
       ENV{PATH}:
-        - "/home/yunis/.platformio/penv/bin"
+        - "/home/yunis/.npm-global/bin"
+        - "/home/yunis/.local/bin"
+        - "/home/yunis/.npm-global/bin"
+        - "/home/yunis/.local/bin"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/bin"
-        - "/opt/android-sdk/cmdline-tools/latest/bin"
-        - "/opt/android-sdk/platform-tools"
-        - "/opt/android-sdk/tools"
-        - "/opt/android-sdk/tools/bin"
-        - "/var/lib/flatpak/exports/bin"
         - "/usr/lib/jvm/default/bin"
         - "/usr/bin/site_perl"
         - "/usr/bin/vendor_perl"
         - "/usr/bin/core_perl"
+        - "/usr/lib/rustup/bin"
   -
     kind: "find-v1"
     backtrace:
@@ -686,61 +643,51 @@ events:
       - "dlltool"
     candidate_directories:
       - "/usr/bin/"
-      - "/home/yunis/.platformio/penv/bin/"
+      - "/home/yunis/.npm-global/bin/"
+      - "/home/yunis/.local/bin/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
-      - "/opt/android-sdk/cmdline-tools/latest/bin/"
-      - "/opt/android-sdk/platform-tools/"
-      - "/opt/android-sdk/tools/"
-      - "/opt/android-sdk/tools/bin/"
-      - "/var/lib/flatpak/exports/bin/"
       - "/usr/lib/jvm/default/bin/"
       - "/usr/bin/site_perl/"
       - "/usr/bin/vendor_perl/"
       - "/usr/bin/core_perl/"
+      - "/usr/lib/rustup/bin/"
     searched_directories:
       - "/usr/bin/arm-none-eabi-dlltool"
-      - "/home/yunis/.platformio/penv/bin/arm-none-eabi-dlltool"
+      - "/home/yunis/.npm-global/bin/arm-none-eabi-dlltool"
+      - "/home/yunis/.local/bin/arm-none-eabi-dlltool"
       - "/usr/local/sbin/arm-none-eabi-dlltool"
       - "/usr/local/bin/arm-none-eabi-dlltool"
-      - "/opt/android-sdk/cmdline-tools/latest/bin/arm-none-eabi-dlltool"
-      - "/opt/android-sdk/platform-tools/arm-none-eabi-dlltool"
-      - "/opt/android-sdk/tools/arm-none-eabi-dlltool"
-      - "/opt/android-sdk/tools/bin/arm-none-eabi-dlltool"
-      - "/var/lib/flatpak/exports/bin/arm-none-eabi-dlltool"
       - "/usr/lib/jvm/default/bin/arm-none-eabi-dlltool"
       - "/usr/bin/site_perl/arm-none-eabi-dlltool"
       - "/usr/bin/vendor_perl/arm-none-eabi-dlltool"
       - "/usr/bin/core_perl/arm-none-eabi-dlltool"
+      - "/usr/lib/rustup/bin/arm-none-eabi-dlltool"
       - "/usr/bin/dlltool"
-      - "/home/yunis/.platformio/penv/bin/dlltool"
+      - "/home/yunis/.npm-global/bin/dlltool"
+      - "/home/yunis/.local/bin/dlltool"
       - "/usr/local/sbin/dlltool"
       - "/usr/local/bin/dlltool"
-      - "/opt/android-sdk/cmdline-tools/latest/bin/dlltool"
-      - "/opt/android-sdk/platform-tools/dlltool"
-      - "/opt/android-sdk/tools/dlltool"
-      - "/opt/android-sdk/tools/bin/dlltool"
-      - "/var/lib/flatpak/exports/bin/dlltool"
       - "/usr/lib/jvm/default/bin/dlltool"
       - "/usr/bin/site_perl/dlltool"
       - "/usr/bin/vendor_perl/dlltool"
       - "/usr/bin/core_perl/dlltool"
+      - "/usr/lib/rustup/bin/dlltool"
     found: false
     search_context:
       ENV{PATH}:
-        - "/home/yunis/.platformio/penv/bin"
+        - "/home/yunis/.npm-global/bin"
+        - "/home/yunis/.local/bin"
+        - "/home/yunis/.npm-global/bin"
+        - "/home/yunis/.local/bin"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/bin"
-        - "/opt/android-sdk/cmdline-tools/latest/bin"
-        - "/opt/android-sdk/platform-tools"
-        - "/opt/android-sdk/tools"
-        - "/opt/android-sdk/tools/bin"
-        - "/var/lib/flatpak/exports/bin"
         - "/usr/lib/jvm/default/bin"
         - "/usr/bin/site_perl"
         - "/usr/bin/vendor_perl"
         - "/usr/bin/core_perl"
+        - "/usr/lib/rustup/bin"
   -
     kind: "find-v1"
     backtrace:
@@ -763,34 +710,30 @@ events:
       - "addr2line"
     candidate_directories:
       - "/usr/bin/"
-      - "/home/yunis/.platformio/penv/bin/"
+      - "/home/yunis/.npm-global/bin/"
+      - "/home/yunis/.local/bin/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
-      - "/opt/android-sdk/cmdline-tools/latest/bin/"
-      - "/opt/android-sdk/platform-tools/"
-      - "/opt/android-sdk/tools/"
-      - "/opt/android-sdk/tools/bin/"
-      - "/var/lib/flatpak/exports/bin/"
       - "/usr/lib/jvm/default/bin/"
       - "/usr/bin/site_perl/"
       - "/usr/bin/vendor_perl/"
       - "/usr/bin/core_perl/"
+      - "/usr/lib/rustup/bin/"
     found: "/usr/bin/arm-none-eabi-addr2line"
     search_context:
       ENV{PATH}:
-        - "/home/yunis/.platformio/penv/bin"
+        - "/home/yunis/.npm-global/bin"
+        - "/home/yunis/.local/bin"
+        - "/home/yunis/.npm-global/bin"
+        - "/home/yunis/.local/bin"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/bin"
-        - "/opt/android-sdk/cmdline-tools/latest/bin"
-        - "/opt/android-sdk/platform-tools"
-        - "/opt/android-sdk/tools"
-        - "/opt/android-sdk/tools/bin"
-        - "/var/lib/flatpak/exports/bin"
         - "/usr/lib/jvm/default/bin"
         - "/usr/bin/site_perl"
         - "/usr/bin/vendor_perl"
         - "/usr/bin/core_perl"
+        - "/usr/lib/rustup/bin"
   -
     kind: "find-v1"
     backtrace:
@@ -813,61 +756,51 @@ events:
       - "tapi"
     candidate_directories:
       - "/usr/bin/"
-      - "/home/yunis/.platformio/penv/bin/"
+      - "/home/yunis/.npm-global/bin/"
+      - "/home/yunis/.local/bin/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
-      - "/opt/android-sdk/cmdline-tools/latest/bin/"
-      - "/opt/android-sdk/platform-tools/"
-      - "/opt/android-sdk/tools/"
-      - "/opt/android-sdk/tools/bin/"
-      - "/var/lib/flatpak/exports/bin/"
       - "/usr/lib/jvm/default/bin/"
       - "/usr/bin/site_perl/"
       - "/usr/bin/vendor_perl/"
       - "/usr/bin/core_perl/"
+      - "/usr/lib/rustup/bin/"
     searched_directories:
       - "/usr/bin/arm-none-eabi-tapi"
-      - "/home/yunis/.platformio/penv/bin/arm-none-eabi-tapi"
+      - "/home/yunis/.npm-global/bin/arm-none-eabi-tapi"
+      - "/home/yunis/.local/bin/arm-none-eabi-tapi"
       - "/usr/local/sbin/arm-none-eabi-tapi"
       - "/usr/local/bin/arm-none-eabi-tapi"
-      - "/opt/android-sdk/cmdline-tools/latest/bin/arm-none-eabi-tapi"
-      - "/opt/android-sdk/platform-tools/arm-none-eabi-tapi"
-      - "/opt/android-sdk/tools/arm-none-eabi-tapi"
-      - "/opt/android-sdk/tools/bin/arm-none-eabi-tapi"
-      - "/var/lib/flatpak/exports/bin/arm-none-eabi-tapi"
       - "/usr/lib/jvm/default/bin/arm-none-eabi-tapi"
       - "/usr/bin/site_perl/arm-none-eabi-tapi"
       - "/usr/bin/vendor_perl/arm-none-eabi-tapi"
       - "/usr/bin/core_perl/arm-none-eabi-tapi"
+      - "/usr/lib/rustup/bin/arm-none-eabi-tapi"
       - "/usr/bin/tapi"
-      - "/home/yunis/.platformio/penv/bin/tapi"
+      - "/home/yunis/.npm-global/bin/tapi"
+      - "/home/yunis/.local/bin/tapi"
       - "/usr/local/sbin/tapi"
       - "/usr/local/bin/tapi"
-      - "/opt/android-sdk/cmdline-tools/latest/bin/tapi"
-      - "/opt/android-sdk/platform-tools/tapi"
-      - "/opt/android-sdk/tools/tapi"
-      - "/opt/android-sdk/tools/bin/tapi"
-      - "/var/lib/flatpak/exports/bin/tapi"
       - "/usr/lib/jvm/default/bin/tapi"
       - "/usr/bin/site_perl/tapi"
       - "/usr/bin/vendor_perl/tapi"
       - "/usr/bin/core_perl/tapi"
+      - "/usr/lib/rustup/bin/tapi"
     found: false
     search_context:
       ENV{PATH}:
-        - "/home/yunis/.platformio/penv/bin"
+        - "/home/yunis/.npm-global/bin"
+        - "/home/yunis/.local/bin"
+        - "/home/yunis/.npm-global/bin"
+        - "/home/yunis/.local/bin"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/bin"
-        - "/opt/android-sdk/cmdline-tools/latest/bin"
-        - "/opt/android-sdk/platform-tools"
-        - "/opt/android-sdk/tools"
-        - "/opt/android-sdk/tools/bin"
-        - "/var/lib/flatpak/exports/bin"
         - "/usr/lib/jvm/default/bin"
         - "/usr/bin/site_perl"
         - "/usr/bin/vendor_perl"
         - "/usr/bin/core_perl"
+        - "/usr/lib/rustup/bin"
   -
     kind: "find-v1"
     backtrace:
@@ -892,74 +825,61 @@ events:
       - "arm-none-eabi-gcc-ar"
     candidate_directories:
       - "/usr/bin/"
-      - "/home/yunis/.platformio/penv/bin/"
+      - "/home/yunis/.npm-global/bin/"
+      - "/home/yunis/.local/bin/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
-      - "/opt/android-sdk/cmdline-tools/latest/bin/"
-      - "/opt/android-sdk/platform-tools/"
-      - "/opt/android-sdk/tools/"
-      - "/opt/android-sdk/tools/bin/"
-      - "/var/lib/flatpak/exports/bin/"
       - "/usr/lib/jvm/default/bin/"
       - "/usr/bin/site_perl/"
       - "/usr/bin/vendor_perl/"
       - "/usr/bin/core_perl/"
+      - "/usr/lib/rustup/bin/"
     searched_directories:
       - "/usr/bin/arm-none-eabi-gcc-ar-16.2"
-      - "/home/yunis/.platformio/penv/bin/arm-none-eabi-gcc-ar-16.2"
+      - "/home/yunis/.npm-global/bin/arm-none-eabi-gcc-ar-16.2"
+      - "/home/yunis/.local/bin/arm-none-eabi-gcc-ar-16.2"
       - "/usr/local/sbin/arm-none-eabi-gcc-ar-16.2"
       - "/usr/local/bin/arm-none-eabi-gcc-ar-16.2"
-      - "/opt/android-sdk/cmdline-tools/latest/bin/arm-none-eabi-gcc-ar-16.2"
-      - "/opt/android-sdk/platform-tools/arm-none-eabi-gcc-ar-16.2"
-      - "/opt/android-sdk/tools/arm-none-eabi-gcc-ar-16.2"
-      - "/opt/android-sdk/tools/bin/arm-none-eabi-gcc-ar-16.2"
-      - "/var/lib/flatpak/exports/bin/arm-none-eabi-gcc-ar-16.2"
       - "/usr/lib/jvm/default/bin/arm-none-eabi-gcc-ar-16.2"
       - "/usr/bin/site_perl/arm-none-eabi-gcc-ar-16.2"
       - "/usr/bin/vendor_perl/arm-none-eabi-gcc-ar-16.2"
       - "/usr/bin/core_perl/arm-none-eabi-gcc-ar-16.2"
+      - "/usr/lib/rustup/bin/arm-none-eabi-gcc-ar-16.2"
       - "/usr/bin/arm-none-eabi-gcc-ar-16"
-      - "/home/yunis/.platformio/penv/bin/arm-none-eabi-gcc-ar-16"
+      - "/home/yunis/.npm-global/bin/arm-none-eabi-gcc-ar-16"
+      - "/home/yunis/.local/bin/arm-none-eabi-gcc-ar-16"
       - "/usr/local/sbin/arm-none-eabi-gcc-ar-16"
       - "/usr/local/bin/arm-none-eabi-gcc-ar-16"
-      - "/opt/android-sdk/cmdline-tools/latest/bin/arm-none-eabi-gcc-ar-16"
-      - "/opt/android-sdk/platform-tools/arm-none-eabi-gcc-ar-16"
-      - "/opt/android-sdk/tools/arm-none-eabi-gcc-ar-16"
-      - "/opt/android-sdk/tools/bin/arm-none-eabi-gcc-ar-16"
-      - "/var/lib/flatpak/exports/bin/arm-none-eabi-gcc-ar-16"
       - "/usr/lib/jvm/default/bin/arm-none-eabi-gcc-ar-16"
       - "/usr/bin/site_perl/arm-none-eabi-gcc-ar-16"
       - "/usr/bin/vendor_perl/arm-none-eabi-gcc-ar-16"
       - "/usr/bin/core_perl/arm-none-eabi-gcc-ar-16"
+      - "/usr/lib/rustup/bin/arm-none-eabi-gcc-ar-16"
       - "/usr/bin/arm-none-eabi-gcc-ar16"
-      - "/home/yunis/.platformio/penv/bin/arm-none-eabi-gcc-ar16"
+      - "/home/yunis/.npm-global/bin/arm-none-eabi-gcc-ar16"
+      - "/home/yunis/.local/bin/arm-none-eabi-gcc-ar16"
       - "/usr/local/sbin/arm-none-eabi-gcc-ar16"
       - "/usr/local/bin/arm-none-eabi-gcc-ar16"
-      - "/opt/android-sdk/cmdline-tools/latest/bin/arm-none-eabi-gcc-ar16"
-      - "/opt/android-sdk/platform-tools/arm-none-eabi-gcc-ar16"
-      - "/opt/android-sdk/tools/arm-none-eabi-gcc-ar16"
-      - "/opt/android-sdk/tools/bin/arm-none-eabi-gcc-ar16"
-      - "/var/lib/flatpak/exports/bin/arm-none-eabi-gcc-ar16"
       - "/usr/lib/jvm/default/bin/arm-none-eabi-gcc-ar16"
       - "/usr/bin/site_perl/arm-none-eabi-gcc-ar16"
       - "/usr/bin/vendor_perl/arm-none-eabi-gcc-ar16"
       - "/usr/bin/core_perl/arm-none-eabi-gcc-ar16"
+      - "/usr/lib/rustup/bin/arm-none-eabi-gcc-ar16"
     found: "/usr/bin/arm-none-eabi-gcc-ar"
     search_context:
       ENV{PATH}:
-        - "/home/yunis/.platformio/penv/bin"
+        - "/home/yunis/.npm-global/bin"
+        - "/home/yunis/.local/bin"
+        - "/home/yunis/.npm-global/bin"
+        - "/home/yunis/.local/bin"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/bin"
-        - "/opt/android-sdk/cmdline-tools/latest/bin"
-        - "/opt/android-sdk/platform-tools"
-        - "/opt/android-sdk/tools"
-        - "/opt/android-sdk/tools/bin"
-        - "/var/lib/flatpak/exports/bin"
         - "/usr/lib/jvm/default/bin"
         - "/usr/bin/site_perl"
         - "/usr/bin/vendor_perl"
         - "/usr/bin/core_perl"
+        - "/usr/lib/rustup/bin"
   -
     kind: "find-v1"
     backtrace:
@@ -984,74 +904,61 @@ events:
       - "arm-none-eabi-gcc-ranlib"
     candidate_directories:
       - "/usr/bin/"
-      - "/home/yunis/.platformio/penv/bin/"
+      - "/home/yunis/.npm-global/bin/"
+      - "/home/yunis/.local/bin/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
-      - "/opt/android-sdk/cmdline-tools/latest/bin/"
-      - "/opt/android-sdk/platform-tools/"
-      - "/opt/android-sdk/tools/"
-      - "/opt/android-sdk/tools/bin/"
-      - "/var/lib/flatpak/exports/bin/"
       - "/usr/lib/jvm/default/bin/"
       - "/usr/bin/site_perl/"
       - "/usr/bin/vendor_perl/"
       - "/usr/bin/core_perl/"
+      - "/usr/lib/rustup/bin/"
     searched_directories:
       - "/usr/bin/arm-none-eabi-gcc-ranlib-16.2"
-      - "/home/yunis/.platformio/penv/bin/arm-none-eabi-gcc-ranlib-16.2"
+      - "/home/yunis/.npm-global/bin/arm-none-eabi-gcc-ranlib-16.2"
+      - "/home/yunis/.local/bin/arm-none-eabi-gcc-ranlib-16.2"
       - "/usr/local/sbin/arm-none-eabi-gcc-ranlib-16.2"
       - "/usr/local/bin/arm-none-eabi-gcc-ranlib-16.2"
-      - "/opt/android-sdk/cmdline-tools/latest/bin/arm-none-eabi-gcc-ranlib-16.2"
-      - "/opt/android-sdk/platform-tools/arm-none-eabi-gcc-ranlib-16.2"
-      - "/opt/android-sdk/tools/arm-none-eabi-gcc-ranlib-16.2"
-      - "/opt/android-sdk/tools/bin/arm-none-eabi-gcc-ranlib-16.2"
-      - "/var/lib/flatpak/exports/bin/arm-none-eabi-gcc-ranlib-16.2"
       - "/usr/lib/jvm/default/bin/arm-none-eabi-gcc-ranlib-16.2"
       - "/usr/bin/site_perl/arm-none-eabi-gcc-ranlib-16.2"
       - "/usr/bin/vendor_perl/arm-none-eabi-gcc-ranlib-16.2"
       - "/usr/bin/core_perl/arm-none-eabi-gcc-ranlib-16.2"
+      - "/usr/lib/rustup/bin/arm-none-eabi-gcc-ranlib-16.2"
       - "/usr/bin/arm-none-eabi-gcc-ranlib-16"
-      - "/home/yunis/.platformio/penv/bin/arm-none-eabi-gcc-ranlib-16"
+      - "/home/yunis/.npm-global/bin/arm-none-eabi-gcc-ranlib-16"
+      - "/home/yunis/.local/bin/arm-none-eabi-gcc-ranlib-16"
       - "/usr/local/sbin/arm-none-eabi-gcc-ranlib-16"
       - "/usr/local/bin/arm-none-eabi-gcc-ranlib-16"
-      - "/opt/android-sdk/cmdline-tools/latest/bin/arm-none-eabi-gcc-ranlib-16"
-      - "/opt/android-sdk/platform-tools/arm-none-eabi-gcc-ranlib-16"
-      - "/opt/android-sdk/tools/arm-none-eabi-gcc-ranlib-16"
-      - "/opt/android-sdk/tools/bin/arm-none-eabi-gcc-ranlib-16"
-      - "/var/lib/flatpak/exports/bin/arm-none-eabi-gcc-ranlib-16"
       - "/usr/lib/jvm/default/bin/arm-none-eabi-gcc-ranlib-16"
       - "/usr/bin/site_perl/arm-none-eabi-gcc-ranlib-16"
       - "/usr/bin/vendor_perl/arm-none-eabi-gcc-ranlib-16"
       - "/usr/bin/core_perl/arm-none-eabi-gcc-ranlib-16"
+      - "/usr/lib/rustup/bin/arm-none-eabi-gcc-ranlib-16"
       - "/usr/bin/arm-none-eabi-gcc-ranlib16"
-      - "/home/yunis/.platformio/penv/bin/arm-none-eabi-gcc-ranlib16"
+      - "/home/yunis/.npm-global/bin/arm-none-eabi-gcc-ranlib16"
+      - "/home/yunis/.local/bin/arm-none-eabi-gcc-ranlib16"
       - "/usr/local/sbin/arm-none-eabi-gcc-ranlib16"
       - "/usr/local/bin/arm-none-eabi-gcc-ranlib16"
-      - "/opt/android-sdk/cmdline-tools/latest/bin/arm-none-eabi-gcc-ranlib16"
-      - "/opt/android-sdk/platform-tools/arm-none-eabi-gcc-ranlib16"
-      - "/opt/android-sdk/tools/arm-none-eabi-gcc-ranlib16"
-      - "/opt/android-sdk/tools/bin/arm-none-eabi-gcc-ranlib16"
-      - "/var/lib/flatpak/exports/bin/arm-none-eabi-gcc-ranlib16"
       - "/usr/lib/jvm/default/bin/arm-none-eabi-gcc-ranlib16"
       - "/usr/bin/site_perl/arm-none-eabi-gcc-ranlib16"
       - "/usr/bin/vendor_perl/arm-none-eabi-gcc-ranlib16"
       - "/usr/bin/core_perl/arm-none-eabi-gcc-ranlib16"
+      - "/usr/lib/rustup/bin/arm-none-eabi-gcc-ranlib16"
     found: "/usr/bin/arm-none-eabi-gcc-ranlib"
     search_context:
       ENV{PATH}:
-        - "/home/yunis/.platformio/penv/bin"
+        - "/home/yunis/.npm-global/bin"
+        - "/home/yunis/.local/bin"
+        - "/home/yunis/.npm-global/bin"
+        - "/home/yunis/.local/bin"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/bin"
-        - "/opt/android-sdk/cmdline-tools/latest/bin"
-        - "/opt/android-sdk/platform-tools"
-        - "/opt/android-sdk/tools"
-        - "/opt/android-sdk/tools/bin"
-        - "/var/lib/flatpak/exports/bin"
         - "/usr/lib/jvm/default/bin"
         - "/usr/bin/site_perl"
         - "/usr/bin/vendor_perl"
         - "/usr/bin/core_perl"
+        - "/usr/lib/rustup/bin"
   -
     kind: "find-v1"
     backtrace:
@@ -1072,39 +979,36 @@ events:
     names:
       - "arm-none-eabi-gcc"
     candidate_directories:
-      - "/home/yunis/.platformio/penv/bin/"
+      - "/home/yunis/.npm-global/bin/"
+      - "/home/yunis/.local/bin/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
       - "/usr/bin/"
-      - "/opt/android-sdk/cmdline-tools/latest/bin/"
-      - "/opt/android-sdk/platform-tools/"
-      - "/opt/android-sdk/tools/"
-      - "/opt/android-sdk/tools/bin/"
-      - "/var/lib/flatpak/exports/bin/"
       - "/usr/lib/jvm/default/bin/"
       - "/usr/bin/site_perl/"
       - "/usr/bin/vendor_perl/"
       - "/usr/bin/core_perl/"
+      - "/usr/lib/rustup/bin/"
     searched_directories:
-      - "/home/yunis/.platformio/penv/bin/arm-none-eabi-gcc"
+      - "/home/yunis/.npm-global/bin/arm-none-eabi-gcc"
+      - "/home/yunis/.local/bin/arm-none-eabi-gcc"
       - "/usr/local/sbin/arm-none-eabi-gcc"
       - "/usr/local/bin/arm-none-eabi-gcc"
     found: "/usr/bin/arm-none-eabi-gcc"
     search_context:
       ENV{PATH}:
-        - "/home/yunis/.platformio/penv/bin"
+        - "/home/yunis/.npm-global/bin"
+        - "/home/yunis/.local/bin"
+        - "/home/yunis/.npm-global/bin"
+        - "/home/yunis/.local/bin"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/bin"
-        - "/opt/android-sdk/cmdline-tools/latest/bin"
-        - "/opt/android-sdk/platform-tools"
-        - "/opt/android-sdk/tools"
-        - "/opt/android-sdk/tools/bin"
-        - "/var/lib/flatpak/exports/bin"
         - "/usr/lib/jvm/default/bin"
         - "/usr/bin/site_perl"
         - "/usr/bin/vendor_perl"
         - "/usr/bin/core_perl"
+        - "/usr/lib/rustup/bin"
   -
     kind: "message-v1"
     backtrace:
@@ -1142,61 +1046,51 @@ events:
       - "arm-none-eabi-gcc-ar"
     candidate_directories:
       - "/usr/bin/"
-      - "/home/yunis/.platformio/penv/bin/"
+      - "/home/yunis/.npm-global/bin/"
+      - "/home/yunis/.local/bin/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
-      - "/opt/android-sdk/cmdline-tools/latest/bin/"
-      - "/opt/android-sdk/platform-tools/"
-      - "/opt/android-sdk/tools/"
-      - "/opt/android-sdk/tools/bin/"
-      - "/var/lib/flatpak/exports/bin/"
       - "/usr/lib/jvm/default/bin/"
       - "/usr/bin/site_perl/"
       - "/usr/bin/vendor_perl/"
       - "/usr/bin/core_perl/"
+      - "/usr/lib/rustup/bin/"
     searched_directories:
       - "/usr/bin/arm-none-eabi-gcc-ar-"
-      - "/home/yunis/.platformio/penv/bin/arm-none-eabi-gcc-ar-"
+      - "/home/yunis/.npm-global/bin/arm-none-eabi-gcc-ar-"
+      - "/home/yunis/.local/bin/arm-none-eabi-gcc-ar-"
       - "/usr/local/sbin/arm-none-eabi-gcc-ar-"
       - "/usr/local/bin/arm-none-eabi-gcc-ar-"
-      - "/opt/android-sdk/cmdline-tools/latest/bin/arm-none-eabi-gcc-ar-"
-      - "/opt/android-sdk/platform-tools/arm-none-eabi-gcc-ar-"
-      - "/opt/android-sdk/tools/arm-none-eabi-gcc-ar-"
-      - "/opt/android-sdk/tools/bin/arm-none-eabi-gcc-ar-"
-      - "/var/lib/flatpak/exports/bin/arm-none-eabi-gcc-ar-"
       - "/usr/lib/jvm/default/bin/arm-none-eabi-gcc-ar-"
       - "/usr/bin/site_perl/arm-none-eabi-gcc-ar-"
       - "/usr/bin/vendor_perl/arm-none-eabi-gcc-ar-"
       - "/usr/bin/core_perl/arm-none-eabi-gcc-ar-"
+      - "/usr/lib/rustup/bin/arm-none-eabi-gcc-ar-"
       - "/usr/bin/arm-none-eabi-gcc-ar-"
-      - "/home/yunis/.platformio/penv/bin/arm-none-eabi-gcc-ar-"
+      - "/home/yunis/.npm-global/bin/arm-none-eabi-gcc-ar-"
+      - "/home/yunis/.local/bin/arm-none-eabi-gcc-ar-"
       - "/usr/local/sbin/arm-none-eabi-gcc-ar-"
       - "/usr/local/bin/arm-none-eabi-gcc-ar-"
-      - "/opt/android-sdk/cmdline-tools/latest/bin/arm-none-eabi-gcc-ar-"
-      - "/opt/android-sdk/platform-tools/arm-none-eabi-gcc-ar-"
-      - "/opt/android-sdk/tools/arm-none-eabi-gcc-ar-"
-      - "/opt/android-sdk/tools/bin/arm-none-eabi-gcc-ar-"
-      - "/var/lib/flatpak/exports/bin/arm-none-eabi-gcc-ar-"
       - "/usr/lib/jvm/default/bin/arm-none-eabi-gcc-ar-"
       - "/usr/bin/site_perl/arm-none-eabi-gcc-ar-"
       - "/usr/bin/vendor_perl/arm-none-eabi-gcc-ar-"
       - "/usr/bin/core_perl/arm-none-eabi-gcc-ar-"
+      - "/usr/lib/rustup/bin/arm-none-eabi-gcc-ar-"
     found: "/usr/bin/arm-none-eabi-gcc-ar"
     search_context:
       ENV{PATH}:
-        - "/home/yunis/.platformio/penv/bin"
+        - "/home/yunis/.npm-global/bin"
+        - "/home/yunis/.local/bin"
+        - "/home/yunis/.npm-global/bin"
+        - "/home/yunis/.local/bin"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/bin"
-        - "/opt/android-sdk/cmdline-tools/latest/bin"
-        - "/opt/android-sdk/platform-tools"
-        - "/opt/android-sdk/tools"
-        - "/opt/android-sdk/tools/bin"
-        - "/var/lib/flatpak/exports/bin"
         - "/usr/lib/jvm/default/bin"
         - "/usr/bin/site_perl"
         - "/usr/bin/vendor_perl"
         - "/usr/bin/core_perl"
+        - "/usr/lib/rustup/bin"
   -
     kind: "find-v1"
     backtrace:
@@ -1221,61 +1115,51 @@ events:
       - "arm-none-eabi-gcc-ranlib"
     candidate_directories:
       - "/usr/bin/"
-      - "/home/yunis/.platformio/penv/bin/"
+      - "/home/yunis/.npm-global/bin/"
+      - "/home/yunis/.local/bin/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
-      - "/opt/android-sdk/cmdline-tools/latest/bin/"
-      - "/opt/android-sdk/platform-tools/"
-      - "/opt/android-sdk/tools/"
-      - "/opt/android-sdk/tools/bin/"
-      - "/var/lib/flatpak/exports/bin/"
       - "/usr/lib/jvm/default/bin/"
       - "/usr/bin/site_perl/"
       - "/usr/bin/vendor_perl/"
       - "/usr/bin/core_perl/"
+      - "/usr/lib/rustup/bin/"
     searched_directories:
       - "/usr/bin/arm-none-eabi-gcc-ranlib-"
-      - "/home/yunis/.platformio/penv/bin/arm-none-eabi-gcc-ranlib-"
+      - "/home/yunis/.npm-global/bin/arm-none-eabi-gcc-ranlib-"
+      - "/home/yunis/.local/bin/arm-none-eabi-gcc-ranlib-"
       - "/usr/local/sbin/arm-none-eabi-gcc-ranlib-"
       - "/usr/local/bin/arm-none-eabi-gcc-ranlib-"
-      - "/opt/android-sdk/cmdline-tools/latest/bin/arm-none-eabi-gcc-ranlib-"
-      - "/opt/android-sdk/platform-tools/arm-none-eabi-gcc-ranlib-"
-      - "/opt/android-sdk/tools/arm-none-eabi-gcc-ranlib-"
-      - "/opt/android-sdk/tools/bin/arm-none-eabi-gcc-ranlib-"
-      - "/var/lib/flatpak/exports/bin/arm-none-eabi-gcc-ranlib-"
       - "/usr/lib/jvm/default/bin/arm-none-eabi-gcc-ranlib-"
       - "/usr/bin/site_perl/arm-none-eabi-gcc-ranlib-"
       - "/usr/bin/vendor_perl/arm-none-eabi-gcc-ranlib-"
       - "/usr/bin/core_perl/arm-none-eabi-gcc-ranlib-"
+      - "/usr/lib/rustup/bin/arm-none-eabi-gcc-ranlib-"
       - "/usr/bin/arm-none-eabi-gcc-ranlib-"
-      - "/home/yunis/.platformio/penv/bin/arm-none-eabi-gcc-ranlib-"
+      - "/home/yunis/.npm-global/bin/arm-none-eabi-gcc-ranlib-"
+      - "/home/yunis/.local/bin/arm-none-eabi-gcc-ranlib-"
       - "/usr/local/sbin/arm-none-eabi-gcc-ranlib-"
       - "/usr/local/bin/arm-none-eabi-gcc-ranlib-"
-      - "/opt/android-sdk/cmdline-tools/latest/bin/arm-none-eabi-gcc-ranlib-"
-      - "/opt/android-sdk/platform-tools/arm-none-eabi-gcc-ranlib-"
-      - "/opt/android-sdk/tools/arm-none-eabi-gcc-ranlib-"
-      - "/opt/android-sdk/tools/bin/arm-none-eabi-gcc-ranlib-"
-      - "/var/lib/flatpak/exports/bin/arm-none-eabi-gcc-ranlib-"
       - "/usr/lib/jvm/default/bin/arm-none-eabi-gcc-ranlib-"
       - "/usr/bin/site_perl/arm-none-eabi-gcc-ranlib-"
       - "/usr/bin/vendor_perl/arm-none-eabi-gcc-ranlib-"
       - "/usr/bin/core_perl/arm-none-eabi-gcc-ranlib-"
+      - "/usr/lib/rustup/bin/arm-none-eabi-gcc-ranlib-"
     found: "/usr/bin/arm-none-eabi-gcc-ranlib"
     search_context:
       ENV{PATH}:
-        - "/home/yunis/.platformio/penv/bin"
+        - "/home/yunis/.npm-global/bin"
+        - "/home/yunis/.local/bin"
+        - "/home/yunis/.npm-global/bin"
+        - "/home/yunis/.local/bin"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/bin"
-        - "/opt/android-sdk/cmdline-tools/latest/bin"
-        - "/opt/android-sdk/platform-tools"
-        - "/opt/android-sdk/tools"
-        - "/opt/android-sdk/tools/bin"
-        - "/var/lib/flatpak/exports/bin"
         - "/usr/lib/jvm/default/bin"
         - "/usr/bin/site_perl"
         - "/usr/bin/vendor_perl"
         - "/usr/bin/core_perl"
+        - "/usr/lib/rustup/bin"
   -
     kind: "try_compile-v1"
     backtrace:
@@ -1285,8 +1169,8 @@ events:
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "/home/yunis/LAB3-prog/build/CMakeFiles/CMakeScratch/TryCompile-hvxUid"
-      binary: "/home/yunis/LAB3-prog/build/CMakeFiles/CMakeScratch/TryCompile-hvxUid"
+      source: "/home/yunis/LAB3-Prog/build/CMakeFiles/CMakeScratch/TryCompile-ltb0RO"
+      binary: "/home/yunis/LAB3-Prog/build/CMakeFiles/CMakeScratch/TryCompile-ltb0RO"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
       CMAKE_C_FLAGS_DEBUG: "-g"
@@ -1295,13 +1179,10 @@ events:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: false
       stdout: |
-        Change Dir: '/home/yunis/LAB3-prog/build/CMakeFiles/CMakeScratch/TryCompile-hvxUid'
+        Change Dir: '/home/yunis/LAB3-Prog/build/CMakeFiles/CMakeScratch/TryCompile-ltb0RO'
         
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_e53b0/fast
-        /usr/bin/make  -f CMakeFiles/cmTC_e53b0.dir/build.make CMakeFiles/cmTC_e53b0.dir/build
-        make[1]: Entering directory '/home/yunis/LAB3-prog/build/CMakeFiles/CMakeScratch/TryCompile-hvxUid'
-        Building C object CMakeFiles/cmTC_e53b0.dir/CMakeCCompilerABI.c.obj
-        /usr/bin/arm-none-eabi-gcc   -v -o CMakeFiles/cmTC_e53b0.dir/CMakeCCompilerABI.c.obj -c /usr/share/cmake/Modules/CMakeCCompilerABI.c
+        Run Build Command(s): /usr/bin/ninja -v cmTC_af4fb
+        [1/2] /usr/bin/arm-none-eabi-gcc   -v -o CMakeFiles/cmTC_af4fb.dir/CMakeCCompilerABI.c.obj -c /usr/share/cmake/Modules/CMakeCCompilerABI.c
         Using built-in specs.
         COLLECT_GCC=/usr/bin/arm-none-eabi-gcc
         Target: arm-none-eabi
@@ -1309,8 +1190,8 @@ events:
         Thread model: single
         Supported LTO compression algorithms: zlib zstd
         gcc version 16.2.0 (Arch Repository) 
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_e53b0.dir/CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'CMakeFiles/cmTC_e53b0.dir/'
-         /usr/lib/gcc/arm-none-eabi/16.2.0/cc1 -quiet -v -D__USES_INITFINI__ /usr/share/cmake/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_e53b0.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mcpu=arm7tdmi -mfloat-abi=soft -marm -mlibarch=armv4t -march=armv4t -version -o /tmp/cctTw1OA.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_af4fb.dir/CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'CMakeFiles/cmTC_af4fb.dir/'
+         /usr/lib/gcc/arm-none-eabi/16.2.0/cc1 -quiet -v -D__USES_INITFINI__ /usr/share/cmake/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_af4fb.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mcpu=arm7tdmi -mfloat-abi=soft -marm -mlibarch=armv4t -march=armv4t -version -o /tmp/ccPon0Tk.s
         GNU C23 (Arch Repository) version 16.2.0 (arm-none-eabi)
         	compiled by GNU C version 16.2.1 20260810, GMP version 6.3.0, MPFR version 4.2.2, MPC version 1.4.1, isl version isl-0.28-GMP
         
@@ -1324,18 +1205,13 @@ events:
          /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/include
         End of search list.
         Compiler executable checksum: 49f3054e89f24d08d571ce2a49dd47f3
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_e53b0.dir/CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'CMakeFiles/cmTC_e53b0.dir/'
-         /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/bin/as -v -march=armv4t -mfloat-abi=soft -meabi=5 -o CMakeFiles/cmTC_e53b0.dir/CMakeCCompilerABI.c.obj /tmp/cctTw1OA.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_af4fb.dir/CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'CMakeFiles/cmTC_af4fb.dir/'
+         /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/bin/as -v -march=armv4t -mfloat-abi=soft -meabi=5 -o CMakeFiles/cmTC_af4fb.dir/CMakeCCompilerABI.c.obj /tmp/ccPon0Tk.s
         GNU assembler version 2.47 (arm-none-eabi) using BFD version (GNU Binutils) 2.47.20260726
         COMPILER_PATH=/usr/lib/gcc/arm-none-eabi/16.2.0/:/usr/lib/gcc/arm-none-eabi/16.2.0/:/usr/lib/gcc/arm-none-eabi/:/usr/lib/gcc/arm-none-eabi/16.2.0/:/usr/lib/gcc/arm-none-eabi/:/usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/bin/
         LIBRARY_PATH=/usr/lib/gcc/arm-none-eabi/16.2.0/:/usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/:/usr/arm-none-eabi/lib/
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_e53b0.dir/CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'CMakeFiles/cmTC_e53b0.dir/CMakeCCompilerABI.c.'
-        Linking C static library libcmTC_e53b0.a
-        /usr/bin/cmake -P CMakeFiles/cmTC_e53b0.dir/cmake_clean_target.cmake
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e53b0.dir/link.txt --verbose=1
-        /usr/bin/arm-none-eabi-ar qc libcmTC_e53b0.a CMakeFiles/cmTC_e53b0.dir/CMakeCCompilerABI.c.obj
-        /usr/bin/arm-none-eabi-ranlib libcmTC_e53b0.a
-        make[1]: Leaving directory '/home/yunis/LAB3-prog/build/CMakeFiles/CMakeScratch/TryCompile-hvxUid'
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_af4fb.dir/CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'CMakeFiles/cmTC_af4fb.dir/CMakeCCompilerABI.c.'
+        [2/2] : && /usr/bin/cmake -E rm -f libcmTC_af4fb.a && /usr/bin/arm-none-eabi-ar qc libcmTC_af4fb.a  CMakeFiles/cmTC_af4fb.dir/CMakeCCompilerABI.c.obj && /usr/bin/arm-none-eabi-ranlib libcmTC_af4fb.a && :
         
       exitCode: 0
   -
@@ -1368,13 +1244,10 @@ events:
       Parsed C implicit link information:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|wild|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
         linker tool regex: [^[ 	]*(->|"|[0-9]+>[ 	-]*Build:[ 	0-9]+ ms[ 	]*)?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|wild))("|,| |$)]
-        ignore line: [Change Dir: '/home/yunis/LAB3-prog/build/CMakeFiles/CMakeScratch/TryCompile-hvxUid']
+        ignore line: [Change Dir: '/home/yunis/LAB3-Prog/build/CMakeFiles/CMakeScratch/TryCompile-ltb0RO']
         ignore line: []
-        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_e53b0/fast]
-        ignore line: [/usr/bin/make  -f CMakeFiles/cmTC_e53b0.dir/build.make CMakeFiles/cmTC_e53b0.dir/build]
-        ignore line: [make[1]: Entering directory '/home/yunis/LAB3-prog/build/CMakeFiles/CMakeScratch/TryCompile-hvxUid']
-        ignore line: [Building C object CMakeFiles/cmTC_e53b0.dir/CMakeCCompilerABI.c.obj]
-        ignore line: [/usr/bin/arm-none-eabi-gcc   -v -o CMakeFiles/cmTC_e53b0.dir/CMakeCCompilerABI.c.obj -c /usr/share/cmake/Modules/CMakeCCompilerABI.c]
+        ignore line: [Run Build Command(s): /usr/bin/ninja -v cmTC_af4fb]
+        ignore line: [[1/2] /usr/bin/arm-none-eabi-gcc   -v -o CMakeFiles/cmTC_af4fb.dir/CMakeCCompilerABI.c.obj -c /usr/share/cmake/Modules/CMakeCCompilerABI.c]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/usr/bin/arm-none-eabi-gcc]
         ignore line: [Target: arm-none-eabi]
@@ -1382,8 +1255,8 @@ events:
         ignore line: [Thread model: single]
         ignore line: [Supported LTO compression algorithms: zlib zstd]
         ignore line: [gcc version 16.2.0 (Arch Repository) ]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_e53b0.dir/CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'CMakeFiles/cmTC_e53b0.dir/']
-        ignore line: [ /usr/lib/gcc/arm-none-eabi/16.2.0/cc1 -quiet -v -D__USES_INITFINI__ /usr/share/cmake/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_e53b0.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mcpu=arm7tdmi -mfloat-abi=soft -marm -mlibarch=armv4t -march=armv4t -version -o /tmp/cctTw1OA.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_af4fb.dir/CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'CMakeFiles/cmTC_af4fb.dir/']
+        ignore line: [ /usr/lib/gcc/arm-none-eabi/16.2.0/cc1 -quiet -v -D__USES_INITFINI__ /usr/share/cmake/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_af4fb.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mcpu=arm7tdmi -mfloat-abi=soft -marm -mlibarch=armv4t -march=armv4t -version -o /tmp/ccPon0Tk.s]
         ignore line: [GNU C23 (Arch Repository) version 16.2.0 (arm-none-eabi)]
         ignore line: [	compiled by GNU C version 16.2.1 20260810  GMP version 6.3.0  MPFR version 4.2.2  MPC version 1.4.1  isl version isl-0.28-GMP]
         ignore line: []
@@ -1397,18 +1270,13 @@ events:
         ignore line: [ /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/include]
         ignore line: [End of search list.]
         ignore line: [Compiler executable checksum: 49f3054e89f24d08d571ce2a49dd47f3]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_e53b0.dir/CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'CMakeFiles/cmTC_e53b0.dir/']
-        ignore line: [ /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/bin/as -v -march=armv4t -mfloat-abi=soft -meabi=5 -o CMakeFiles/cmTC_e53b0.dir/CMakeCCompilerABI.c.obj /tmp/cctTw1OA.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_af4fb.dir/CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'CMakeFiles/cmTC_af4fb.dir/']
+        ignore line: [ /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/bin/as -v -march=armv4t -mfloat-abi=soft -meabi=5 -o CMakeFiles/cmTC_af4fb.dir/CMakeCCompilerABI.c.obj /tmp/ccPon0Tk.s]
         ignore line: [GNU assembler version 2.47 (arm-none-eabi) using BFD version (GNU Binutils) 2.47.20260726]
         ignore line: [COMPILER_PATH=/usr/lib/gcc/arm-none-eabi/16.2.0/:/usr/lib/gcc/arm-none-eabi/16.2.0/:/usr/lib/gcc/arm-none-eabi/:/usr/lib/gcc/arm-none-eabi/16.2.0/:/usr/lib/gcc/arm-none-eabi/:/usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/bin/]
         ignore line: [LIBRARY_PATH=/usr/lib/gcc/arm-none-eabi/16.2.0/:/usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/:/usr/arm-none-eabi/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_e53b0.dir/CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'CMakeFiles/cmTC_e53b0.dir/CMakeCCompilerABI.c.']
-        ignore line: [Linking C static library libcmTC_e53b0.a]
-        ignore line: [/usr/bin/cmake -P CMakeFiles/cmTC_e53b0.dir/cmake_clean_target.cmake]
-        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e53b0.dir/link.txt --verbose=1]
-        ignore line: [/usr/bin/arm-none-eabi-ar qc libcmTC_e53b0.a CMakeFiles/cmTC_e53b0.dir/CMakeCCompilerABI.c.obj]
-        ignore line: [/usr/bin/arm-none-eabi-ranlib libcmTC_e53b0.a]
-        ignore line: [make[1]: Leaving directory '/home/yunis/LAB3-prog/build/CMakeFiles/CMakeScratch/TryCompile-hvxUid']
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_af4fb.dir/CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'CMakeFiles/cmTC_af4fb.dir/CMakeCCompilerABI.c.']
+        ignore line: [[2/2] : && /usr/bin/cmake -E rm -f libcmTC_af4fb.a && /usr/bin/arm-none-eabi-ar qc libcmTC_af4fb.a  CMakeFiles/cmTC_af4fb.dir/CMakeCCompilerABI.c.obj && /usr/bin/arm-none-eabi-ranlib libcmTC_af4fb.a && :]
         ignore line: []
         ignore line: []
         implicit libs: []
@@ -1435,40 +1303,37 @@ events:
     names:
       - "openocd"
     candidate_directories:
-      - "/home/yunis/.platformio/penv/bin/"
+      - "/home/yunis/.npm-global/bin/"
+      - "/home/yunis/.local/bin/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
       - "/usr/bin/"
-      - "/opt/android-sdk/cmdline-tools/latest/bin/"
-      - "/opt/android-sdk/platform-tools/"
-      - "/opt/android-sdk/tools/"
-      - "/opt/android-sdk/tools/bin/"
-      - "/var/lib/flatpak/exports/bin/"
       - "/usr/lib/jvm/default/bin/"
       - "/usr/bin/site_perl/"
       - "/usr/bin/vendor_perl/"
       - "/usr/bin/core_perl/"
+      - "/usr/lib/rustup/bin/"
       - "/bin/"
     searched_directories:
-      - "/home/yunis/.platformio/penv/bin/openocd"
+      - "/home/yunis/.npm-global/bin/openocd"
+      - "/home/yunis/.local/bin/openocd"
       - "/usr/local/sbin/openocd"
       - "/usr/local/bin/openocd"
     found: "/usr/bin/openocd"
     search_context:
       ENV{PATH}:
-        - "/home/yunis/.platformio/penv/bin"
+        - "/home/yunis/.npm-global/bin"
+        - "/home/yunis/.local/bin"
+        - "/home/yunis/.npm-global/bin"
+        - "/home/yunis/.local/bin"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/bin"
-        - "/opt/android-sdk/cmdline-tools/latest/bin"
-        - "/opt/android-sdk/platform-tools"
-        - "/opt/android-sdk/tools"
-        - "/opt/android-sdk/tools/bin"
-        - "/var/lib/flatpak/exports/bin"
         - "/usr/lib/jvm/default/bin"
         - "/usr/bin/site_perl"
         - "/usr/bin/vendor_perl"
         - "/usr/bin/core_perl"
+        - "/usr/lib/rustup/bin"
       CMAKE_INSTALL_PREFIX: "/usr/local"
       CMAKE_SYSTEM_PROGRAM_PATH:
         - "/bin"

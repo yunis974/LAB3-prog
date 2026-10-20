@@ -1,4 +1,4 @@
-#ifndef lcd.h
+#ifndef lcd_h
 
 #include <stdbool.h>
 #include <stdint.h>
@@ -17,5 +17,6 @@ void LCD_Send4bits(uint8_t data);
 void LCD_SendString(char *string);
 void LCD_Clear(void);
 void LCD_SetCursor(uint8_t row, uint8_t col);
+
 
 #endif
