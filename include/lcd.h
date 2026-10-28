@@ -7,7 +7,6 @@
 void LCD_Init(void);
 void LCD_Command(bool RW, bool RS, uint8_t data);
 void LCD_WriteChar(char character);
-void LCD_ShowTime(void);
 
 void LCD_GPIO_Init(void);
 void LCD_SysTickInit(uint32_t freq);

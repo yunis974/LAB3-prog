@@ -191,7 +191,7 @@ END GROUP
  .isr_vector    0x08000000       0xec CMakeFiles/firmware.dir/startup.s.obj
                 0x080000ec                        . = ALIGN (0x4)
 
-.text           0x080000ec      0xe78
+.text           0x080000ec      0xe80
                 0x080000ec                        . = ALIGN (0x4)
  *(.text)
  *(.text*)
@@ -271,119 +271,120 @@ END GROUP
                 0x080002d2       0x48 CMakeFiles/firmware.dir/src/lcd.c.obj
                 0x080002d2                LCD_Command
  .text.LCD_Init
-                0x0800031a       0x5c CMakeFiles/firmware.dir/src/lcd.c.obj
+                0x0800031a       0x62 CMakeFiles/firmware.dir/src/lcd.c.obj
                 0x0800031a                LCD_Init
  .text.LCD_WriteChar
-                0x08000376       0x3c CMakeFiles/firmware.dir/src/lcd.c.obj
-                0x08000376                LCD_WriteChar
+                0x0800037c       0x3c CMakeFiles/firmware.dir/src/lcd.c.obj
+                0x0800037c                LCD_WriteChar
  .text.LCD_SendString
-                0x080003b2       0x2a CMakeFiles/firmware.dir/src/lcd.c.obj
-                0x080003b2                LCD_SendString
+                0x080003b8       0x2a CMakeFiles/firmware.dir/src/lcd.c.obj
+                0x080003b8                LCD_SendString
  .text.LCD_Clear
-                0x080003dc       0x18 CMakeFiles/firmware.dir/src/lcd.c.obj
-                0x080003dc                LCD_Clear
+                0x080003e2       0x18 CMakeFiles/firmware.dir/src/lcd.c.obj
+                0x080003e2                LCD_Clear
+ *fill*         0x080003fa        0x2 
  .text.LCD_SetCursor
-                0x080003f4       0x54 CMakeFiles/firmware.dir/src/lcd.c.obj
-                0x080003f4                LCD_SetCursor
+                0x080003fc       0x54 CMakeFiles/firmware.dir/src/lcd.c.obj
+                0x080003fc                LCD_SetCursor
  .text.updateNumber
-                0x08000448       0x98 CMakeFiles/firmware.dir/src/main.c.obj
-                0x08000448                updateNumber
- .text.main     0x080004e0       0x3c CMakeFiles/firmware.dir/src/main.c.obj
-                0x080004e0                main
+                0x08000450       0x98 CMakeFiles/firmware.dir/src/main.c.obj
+                0x08000450                updateNumber
+ .text.main     0x080004e8       0x3c CMakeFiles/firmware.dir/src/main.c.obj
+                0x080004e8                main
  .text.timerInit
-                0x0800051c       0x7c CMakeFiles/firmware.dir/src/timer.c.obj
-                0x0800051c                timerInit
+                0x08000524       0x7c CMakeFiles/firmware.dir/src/timer.c.obj
+                0x08000524                timerInit
  .text.setTimerCallback
-                0x08000598       0x1c CMakeFiles/firmware.dir/src/timer.c.obj
-                0x08000598                setTimerCallback
+                0x080005a0       0x1c CMakeFiles/firmware.dir/src/timer.c.obj
+                0x080005a0                setTimerCallback
  .text.TIM2_IRQHandler
-                0x080005b4       0x34 CMakeFiles/firmware.dir/src/timer.c.obj
-                0x080005b4                TIM2_IRQHandler
- .text.sprintf  0x080005e8       0x44 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libg_nano.a(libc_a-sprintf.o)
-                0x080005e8                sprintf
-                0x080005e8                siprintf
+                0x080005bc       0x34 CMakeFiles/firmware.dir/src/timer.c.obj
+                0x080005bc                TIM2_IRQHandler
+ .text.sprintf  0x080005f0       0x44 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libg_nano.a(libc_a-sprintf.o)
+                0x080005f0                sprintf
+                0x080005f0                siprintf
  .text.__ssputs_r
-                0x0800062c       0xc6 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libg_nano.a(libc_a-nano-svfprintf.o)
-                0x0800062c                __ssputs_r
- *fill*         0x080006f2        0x2 
+                0x08000634       0xc6 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libg_nano.a(libc_a-nano-svfprintf.o)
+                0x08000634                __ssputs_r
+ *fill*         0x080006fa        0x2 
  .text._svfprintf_r
-                0x080006f4      0x1f0 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libg_nano.a(libc_a-nano-svfprintf.o)
-                0x080006f4                _svfprintf_r
-                0x080006f4                _svfiprintf_r
+                0x080006fc      0x1f0 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libg_nano.a(libc_a-nano-svfprintf.o)
+                0x080006fc                _svfprintf_r
+                0x080006fc                _svfiprintf_r
  .text._printf_common
-                0x080008e4       0xd4 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libg_nano.a(libc_a-nano-vfprintf_i.o)
-                0x080008e4                _printf_common
+                0x080008ec       0xd4 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libg_nano.a(libc_a-nano-vfprintf_i.o)
+                0x080008ec                _printf_common
  .text._printf_i
-                0x080009b8      0x258 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libg_nano.a(libc_a-nano-vfprintf_i.o)
-                0x080009b8                _printf_i
- .text.memmove  0x08000c10       0x32 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libg_nano.a(libc_a-memmove.o)
-                0x08000c10                memmove
- .text.memchr   0x08000c42       0x1c /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libg_nano.a(libc_a-memchr-stub.o)
-                0x08000c42                memchr
- .text.memcpy   0x08000c5e       0x1c /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libg_nano.a(libc_a-memcpy-stub.o)
-                0x08000c5e                memcpy
- *fill*         0x08000c7a        0x2 
- .text._free_r  0x08000c7c       0x94 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libg_nano.a(libc_a-freer.o)
-                0x08000c7c                _free_r
+                0x080009c0      0x258 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libg_nano.a(libc_a-nano-vfprintf_i.o)
+                0x080009c0                _printf_i
+ .text.memmove  0x08000c18       0x32 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libg_nano.a(libc_a-memmove.o)
+                0x08000c18                memmove
+ .text.memchr   0x08000c4a       0x1c /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libg_nano.a(libc_a-memchr-stub.o)
+                0x08000c4a                memchr
+ .text.memcpy   0x08000c66       0x1c /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libg_nano.a(libc_a-memcpy-stub.o)
+                0x08000c66                memcpy
+ *fill*         0x08000c82        0x2 
+ .text._free_r  0x08000c84       0x94 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libg_nano.a(libc_a-freer.o)
+                0x08000c84                _free_r
  .text.sbrk_aligned
-                0x08000d10       0x44 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libg_nano.a(libc_a-mallocr.o)
+                0x08000d18       0x44 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libg_nano.a(libc_a-mallocr.o)
  .text._malloc_r
-                0x08000d54      0x100 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libg_nano.a(libc_a-mallocr.o)
-                0x08000d54                _malloc_r
+                0x08000d5c      0x100 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libg_nano.a(libc_a-mallocr.o)
+                0x08000d5c                _malloc_r
  .text.__malloc_lock
-                0x08000e54        0xc /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libg_nano.a(libc_a-mlock.o)
-                0x08000e54                __malloc_lock
+                0x08000e5c        0xc /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libg_nano.a(libc_a-mlock.o)
+                0x08000e5c                __malloc_lock
  .text.__malloc_unlock
-                0x08000e60        0xc /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libg_nano.a(libc_a-mlock.o)
-                0x08000e60                __malloc_unlock
+                0x08000e68        0xc /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libg_nano.a(libc_a-mlock.o)
+                0x08000e68                __malloc_unlock
  .text._realloc_r
-                0x08000e6c       0x5a /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libg_nano.a(libc_a-reallocr.o)
-                0x08000e6c                _realloc_r
- *fill*         0x08000ec6        0x2 
- .text._sbrk_r  0x08000ec8       0x20 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libg_nano.a(libc_a-sbrkr.o)
-                0x08000ec8                _sbrk_r
+                0x08000e74       0x5a /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libg_nano.a(libc_a-reallocr.o)
+                0x08000e74                _realloc_r
+ *fill*         0x08000ece        0x2 
+ .text._sbrk_r  0x08000ed0       0x20 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libg_nano.a(libc_a-sbrkr.o)
+                0x08000ed0                _sbrk_r
  .text.__retarget_lock_acquire_recursive
-                0x08000ee8        0x2 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libg_nano.a(libc_a-lock.o)
-                0x08000ee8                __retarget_lock_acquire_recursive
+                0x08000ef0        0x2 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libg_nano.a(libc_a-lock.o)
+                0x08000ef0                __retarget_lock_acquire_recursive
  .text.__retarget_lock_release_recursive
-                0x08000eea        0x2 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libg_nano.a(libc_a-lock.o)
-                0x08000eea                __retarget_lock_release_recursive
+                0x08000ef2        0x2 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libg_nano.a(libc_a-lock.o)
+                0x08000ef2                __retarget_lock_release_recursive
  .text._malloc_usable_size_r
-                0x08000eec       0x10 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libg_nano.a(libc_a-msizer.o)
-                0x08000eec                _malloc_usable_size_r
- .text._sbrk    0x08000efc       0x1c /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libnosys.a(sbrk.o)
-                0x08000efc                _sbrk
+                0x08000ef4       0x10 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libg_nano.a(libc_a-msizer.o)
+                0x08000ef4                _malloc_usable_size_r
+ .text._sbrk    0x08000f04       0x1c /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libnosys.a(sbrk.o)
+                0x08000f04                _sbrk
  *(.rodata)
- .rodata        0x08000f18       0x19 CMakeFiles/firmware.dir/src/main.c.obj
+ .rodata        0x08000f20       0x19 CMakeFiles/firmware.dir/src/main.c.obj
  *(.rodata*)
  .rodata._svfprintf_r.str1.1
-                0x08000f31       0x33 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libg_nano.a(libc_a-nano-svfprintf.o)
+                0x08000f39       0x33 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libg_nano.a(libc_a-nano-svfprintf.o)
                                  0x11 (size before relaxing)
  .rodata._printf_i.str1.1
-                0x08000f64        0x0 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libg_nano.a(libc_a-nano-vfprintf_i.o)
+                0x08000f6c        0x0 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libg_nano.a(libc_a-nano-vfprintf_i.o)
                                  0x22 (size before relaxing)
-                0x08000f64                        . = ALIGN (0x4)
-                0x08000f64                        _sidata = LOADADDR (.data)
+                0x08000f6c                        . = ALIGN (0x4)
+                0x08000f6c                        _sidata = LOADADDR (.data)
 
-.glue_7         0x08000f64        0x0
- .glue_7        0x08000f64        0x0 linker stubs
+.glue_7         0x08000f6c        0x0
+ .glue_7        0x08000f6c        0x0 linker stubs
 
-.glue_7t        0x08000f64        0x0
- .glue_7t       0x08000f64        0x0 linker stubs
+.glue_7t        0x08000f6c        0x0
+ .glue_7t       0x08000f6c        0x0 linker stubs
 
-.vfp11_veneer   0x08000f64        0x0
- .vfp11_veneer  0x08000f64        0x0 linker stubs
+.vfp11_veneer   0x08000f6c        0x0
+ .vfp11_veneer  0x08000f6c        0x0 linker stubs
 
-.v4_bx          0x08000f64        0x0
- .v4_bx         0x08000f64        0x0 linker stubs
+.v4_bx          0x08000f6c        0x0
+ .v4_bx         0x08000f6c        0x0 linker stubs
 
-.iplt           0x08000f64        0x0
- .iplt          0x08000f64        0x0 CMakeFiles/firmware.dir/startup.s.obj
+.iplt           0x08000f6c        0x0
+ .iplt          0x08000f6c        0x0 CMakeFiles/firmware.dir/startup.s.obj
 
-.rel.dyn        0x08000f64        0x0
- .rel.iplt      0x08000f64        0x0 CMakeFiles/firmware.dir/startup.s.obj
+.rel.dyn        0x08000f6c        0x0
+ .rel.iplt      0x08000f6c        0x0 CMakeFiles/firmware.dir/startup.s.obj
 
-.data           0x20000000       0x54 load address 0x08000f64
+.data           0x20000000       0x54 load address 0x08000f6c
                 0x20000000                        . = ALIGN (0x4)
                 0x20000000                        _sdata = .
  *(.data)
@@ -404,10 +405,10 @@ END GROUP
                 0x20000054                        . = ALIGN (0x4)
                 0x20000054                        _edata = .
 
-.igot.plt       0x20000054        0x0 load address 0x08000fb8
+.igot.plt       0x20000054        0x0 load address 0x08000fc0
  .igot.plt      0x20000054        0x0 CMakeFiles/firmware.dir/startup.s.obj
 
-.bss            0x20000054       0x28 load address 0x08000fb8
+.bss            0x20000054       0x28 load address 0x08000fc0
                 0x20000054                        . = ALIGN (0x4)
                 0x20000054                        _sbss = .
  *(.bss)
@@ -434,7 +435,7 @@ END GROUP
                 0x2000007c                        _ebss = .
 
 ._user_heap_stack
-                0x2000007c      0x404 load address 0x08000fb8
+                0x2000007c      0x404 load address 0x08000fc0
                 0x20000080                        . = ALIGN (0x8)
  *fill*         0x2000007c        0x4 
                 0x20000080                        end = .
@@ -642,25 +643,25 @@ LOAD linker stubs
  .debug_rnglists
                 0x00000277       0x13 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libnosys.a(sbrk.o)
 
-.debug_line     0x00000000     0x2e55
- .debug_line    0x00000000      0x27a CMakeFiles/firmware.dir/src/lcd.c.obj
- .debug_line    0x0000027a      0x159 CMakeFiles/firmware.dir/src/main.c.obj
- .debug_line    0x000003d3      0x12e CMakeFiles/firmware.dir/src/timer.c.obj
- .debug_line    0x00000501      0x25a /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libg_nano.a(libc_a-sprintf.o)
- .debug_line    0x0000075b      0x108 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libg_nano.a(libc_a-impure.o)
- .debug_line    0x00000863      0x81d /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libg_nano.a(libc_a-nano-svfprintf.o)
- .debug_line    0x00001080      0x6b1 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libg_nano.a(libc_a-nano-vfprintf_i.o)
- .debug_line    0x00001731      0x177 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libg_nano.a(libc_a-memmove.o)
- .debug_line    0x000018a8      0x191 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libg_nano.a(libc_a-memchr-stub.o)
- .debug_line    0x00001a39      0x1aa /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libg_nano.a(libc_a-memcpy-stub.o)
- .debug_line    0x00001be3      0x2b2 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libg_nano.a(libc_a-freer.o)
- .debug_line    0x00001e95      0x49b /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libg_nano.a(libc_a-mallocr.o)
- .debug_line    0x00002330      0x18a /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libg_nano.a(libc_a-mlock.o)
- .debug_line    0x000024ba      0x217 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libg_nano.a(libc_a-reallocr.o)
- .debug_line    0x000026d1      0x1bc /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libg_nano.a(libc_a-sbrkr.o)
- .debug_line    0x0000288d      0x17d /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libg_nano.a(libc_a-lock.o)
- .debug_line    0x00002a0a      0x1a7 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libg_nano.a(libc_a-msizer.o)
- .debug_line    0x00002bb1      0x2a4 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libg_nano.a(libc_a-reent.o)
+.debug_line     0x00000000     0x2e56
+ .debug_line    0x00000000      0x27b CMakeFiles/firmware.dir/src/lcd.c.obj
+ .debug_line    0x0000027b      0x159 CMakeFiles/firmware.dir/src/main.c.obj
+ .debug_line    0x000003d4      0x12e CMakeFiles/firmware.dir/src/timer.c.obj
+ .debug_line    0x00000502      0x25a /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libg_nano.a(libc_a-sprintf.o)
+ .debug_line    0x0000075c      0x108 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libg_nano.a(libc_a-impure.o)
+ .debug_line    0x00000864      0x81d /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libg_nano.a(libc_a-nano-svfprintf.o)
+ .debug_line    0x00001081      0x6b1 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libg_nano.a(libc_a-nano-vfprintf_i.o)
+ .debug_line    0x00001732      0x177 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libg_nano.a(libc_a-memmove.o)
+ .debug_line    0x000018a9      0x191 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libg_nano.a(libc_a-memchr-stub.o)
+ .debug_line    0x00001a3a      0x1aa /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libg_nano.a(libc_a-memcpy-stub.o)
+ .debug_line    0x00001be4      0x2b2 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libg_nano.a(libc_a-freer.o)
+ .debug_line    0x00001e96      0x49b /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libg_nano.a(libc_a-mallocr.o)
+ .debug_line    0x00002331      0x18a /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libg_nano.a(libc_a-mlock.o)
+ .debug_line    0x000024bb      0x217 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libg_nano.a(libc_a-reallocr.o)
+ .debug_line    0x000026d2      0x1bc /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libg_nano.a(libc_a-sbrkr.o)
+ .debug_line    0x0000288e      0x17d /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libg_nano.a(libc_a-lock.o)
+ .debug_line    0x00002a0b      0x1a7 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libg_nano.a(libc_a-msizer.o)
+ .debug_line    0x00002bb2      0x2a4 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libg_nano.a(libc_a-reent.o)
 
 .debug_str      0x00000000     0x10de
  .debug_str     0x00000000     0x10de CMakeFiles/firmware.dir/src/lcd.c.obj

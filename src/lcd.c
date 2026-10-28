@@ -125,6 +125,7 @@ void LCD_Init(void)
     LCD_Delay(50);
 
     LCD_Command(0, 0, 0x33);
+    LCD_Delay(2);
     LCD_Command(0, 0, 0x32);
 
     LCD_Command(0,0,0x28);
@@ -162,7 +163,7 @@ void LCD_SetCursor(uint8_t row, uint8_t col)
 {
     uint8_t rows[4] = {0x00, 0x40, 0x14, 0x54};
     if (row > 3) return;
-    //if (col > 19) return;
+    if (col > 19) return;
 
     uint8_t address = rows[row] + col;
 
